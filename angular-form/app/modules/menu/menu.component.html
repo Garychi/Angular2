@@ -1,0 +1,9 @@
+<div>
+    <ul class="nav nav-pills nav-stacked">
+
+            <li *ngFor="let menu of menuArray">
+                <a routerLink={{menu.path}} routerLinkActive="active">{{menu.menuName}}</a>
+            </li>
+
+    </ul>
+</div>
