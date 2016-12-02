@@ -28,7 +28,7 @@ export class MainContentComponent implements OnInit {
 
 
     getAngularInfo(): void {
-        let url = "http://localhost:8080/DWGateway/restful/StockOutService/IStockOutService/stockOutGet";
+       let url="";
         let queryString = {};
         // queryString["serviceId"] = "StockOutGet";
         this.dataAccessService.getMockData(url, queryString)

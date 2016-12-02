@@ -63,13 +63,8 @@ export class DataAccessService {
 
     getFarmInfo(){
         let headers = new Headers({'Content-Type': 'application/json'});
-        headers.append("Access-Control-Allow-Origin","*");
-        headers.append("Access-Control-Allow-Headers", "origin, content-type, accept, authorization");
-        headers.append("Access-Control-Allow-Credentials", "true");
-        headers.append("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
-        headers.append("Access-Control-Max-Age", "1209600");
 
-        let url="http://localhost:8080/FarmProject/services/restfulService/stock/getData";
+        let url="http://localhost:8080/FarmProject/services/restfulService/fintech/getData";
         let queryString =[];
 
         let options = new RequestOptions({headers: headers});

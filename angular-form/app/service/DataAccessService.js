@@ -67,7 +67,7 @@ var DataAccessService = (function () {
         headers.append("Access-Control-Allow-Credentials", "true");
         headers.append("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
         headers.append("Access-Control-Max-Age", "1209600");
-        var url = "http://localhost:8080/FarmProject/services/restfulService/stock/getData";
+        var url = "http://localhost:8080/FarmProject/services/restfulService/fintech/getData";
         var queryString = [];
         var options = new http_2.RequestOptions({ headers: headers });
         return this.http.post(url, queryString, options)
