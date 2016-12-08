@@ -69,19 +69,6 @@ var DataAccessService = (function () {
         return this.http.post(url, queryString, options)
             .map(this.extractData)
             .catch(this.handleError);
-        // return this.http.post(url, queryString, options)
-        //     .subscribe(function (response) {
-        //         console.log('http send post success');
-        //         callBackSuccess(response);
-        //     }, function (error) {
-        //         console.log('http send post failed');
-        //         // this will log error message
-        //         this.handleError;
-        //         callBackFailed(error);
-        //     }, function () {
-        //         //complete
-        //         console.log('http send post complete');
-        //     });
     };
     DataAccessService = __decorate([
         core_1.Injectable(), 

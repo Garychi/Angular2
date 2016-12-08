@@ -3,12 +3,15 @@
  */
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {ModalComponentModule} from '../commons/openWindow/modal.module';
+
 
 import {FinTechComponent} from './fintech.component';
 
 @NgModule({
     imports:[
-        BrowserModule
+        BrowserModule,
+        ModalComponentModule
     ],
     declarations :[
         FinTechComponent

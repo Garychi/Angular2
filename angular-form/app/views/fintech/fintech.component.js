@@ -17,7 +17,7 @@ var FinTechComponent = (function () {
     function FinTechComponent(dataAccessService) {
         this.dataAccessService = dataAccessService;
     }
-    FinTechComponent.prototype.sendRequest = function () {
+    FinTechComponent.prototype.search = function () {
         var _this = this;
         console.log('sendRequest');
         this.dataAccessService.getFarmInfo()
@@ -25,10 +25,6 @@ var FinTechComponent = (function () {
             console.log('complete');
         });
         console.log('done');
-    };
-    FinTechComponent.prototype.callBackSuccess = function (response) {
-        var data = response.json();
-        console.log(data);
     };
     FinTechComponent.prototype.callBackFailed = function (error) {
         this.errorMessage = error;

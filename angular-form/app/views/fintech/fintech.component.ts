@@ -4,7 +4,6 @@
 import {Component} from '@angular/core';
 
 import {DataAccessService} from '../../service/DataAccessService';
-import {Observable, Subscription} from "rxjs";
 import {News} from './News';
 
 @Component({
@@ -22,7 +21,7 @@ export class FinTechComponent {
     }
 
 
-    private sendRequest() {
+    private search() {
         console.log('sendRequest');
 
         this.dataAccessService.getFarmInfo()
@@ -32,13 +31,10 @@ export class FinTechComponent {
                 function complete() {
                     console.log('complete');
                 });
+
         console.log('done');
     }
 
-    private callBackSuccess(response) {
-        var data = response.json();
-        console.log(data);
-    }
 
     private callBackFailed(error) {
         this.errorMessage = error;
