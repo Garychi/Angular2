@@ -20,10 +20,19 @@ var FinTechComponent = (function () {
     FinTechComponent.prototype.sendRequest = function () {
         var _this = this;
         console.log('sendRequest');
-        this.dataAccessService.getFarmInfo().
-            subscribe(function (error) { return _this.errorMessage = error; }, function (extractData) { return _this.valueObject; });
-        // console.log();
+        this.dataAccessService.getFarmInfo()
+            .subscribe(function (response) { return _this.myNews = response; }, function (error) { return _this.callBackFailed(error); }, function complete() {
+            console.log('complete');
+        });
         console.log('done');
+    };
+    FinTechComponent.prototype.callBackSuccess = function (response) {
+        var data = response.json();
+        console.log(data);
+    };
+    FinTechComponent.prototype.callBackFailed = function (error) {
+        this.errorMessage = error;
+        console.log(this.errorMessage);
     };
     FinTechComponent = __decorate([
         core_1.Component({

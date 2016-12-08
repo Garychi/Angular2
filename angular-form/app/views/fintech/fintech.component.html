@@ -12,6 +12,20 @@
         <!--標題-->
         <div>
             <a>標題</a>
+            <ul *ngIf="myNews">
+                <li *ngFor="let news of myNews">
+                    <div>
+                        <a>{{news.Title}}</a>
+                    </div>
+                    <div>
+                        <a>{{news.name}}</a>
+                    </div>
+                    <div>
+                        <a>{{news.data}}</a>
+                    </div>
+                </li>
+            </ul>
+            <a>標題2</a>
         </div>
 
         <!--文章摘要-->

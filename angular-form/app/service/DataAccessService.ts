@@ -7,6 +7,7 @@ import {Headers, RequestOptions} from '@angular/http';
 import {Observable}     from 'rxjs/Observable';
 
 import {BOXES} from '../mock-boxes';
+import {News} from '../views/fintech/News';
 
 
 @Injectable()
@@ -17,11 +18,14 @@ export class DataAccessService {
 
     private extractData(res: Response) {
         let body = res.json();
-        return body.data || {};
+        return body || {};
     }
 
     private handleError(error: Response | any) {
         // In a real world app, we might use a remote logging infrastructure
+
+        console.log('in to this handleError');
+
         let errMsg: string;
         if (error instanceof Response) {
             const body = error.json() || '';
@@ -61,15 +65,29 @@ export class DataAccessService {
         return data;
     }
 
-    getFarmInfo(){
+    getFarmInfo() : Observable<News[]>{
         let headers = new Headers({'Content-Type': 'application/json'});
-
-        let url="http://localhost:8080/FarmProject/services/restfulService/fintech/getData";
-        let queryString =[];
+        let url = "http://localhost:8080/FarmProject/services/restfulService/fintech/getData";
+        let queryString = [];
 
         let options = new RequestOptions({headers: headers});
         return this.http.post(url, queryString, options)
             .map(this.extractData)
             .catch(this.handleError);
+
+
+        // return this.http.post(url, queryString, options)
+        //     .subscribe(function (response) {
+        //         console.log('http send post success');
+        //         callBackSuccess(response);
+        //     }, function (error) {
+        //         console.log('http send post failed');
+        //         // this will log error message
+        //         this.handleError;
+        //         callBackFailed(error);
+        //     }, function () {
+        //         //complete
+        //         console.log('http send post complete');
+        //     });
     }
 }

@@ -22,10 +22,11 @@ var DataAccessService = (function () {
     }
     DataAccessService.prototype.extractData = function (res) {
         var body = res.json();
-        return body.data || {};
+        return body || {};
     };
     DataAccessService.prototype.handleError = function (error) {
         // In a real world app, we might use a remote logging infrastructure
+        console.log('in to this handleError');
         var errMsg;
         if (error instanceof http_1.Response) {
             var body = error.json() || '';
@@ -62,17 +63,25 @@ var DataAccessService = (function () {
     };
     DataAccessService.prototype.getFarmInfo = function () {
         var headers = new http_2.Headers({ 'Content-Type': 'application/json' });
-        headers.append("Access-Control-Allow-Origin", "*");
-        headers.append("Access-Control-Allow-Headers", "origin, content-type, accept, authorization");
-        headers.append("Access-Control-Allow-Credentials", "true");
-        headers.append("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
-        headers.append("Access-Control-Max-Age", "1209600");
         var url = "http://localhost:8080/FarmProject/services/restfulService/fintech/getData";
         var queryString = [];
         var options = new http_2.RequestOptions({ headers: headers });
         return this.http.post(url, queryString, options)
             .map(this.extractData)
             .catch(this.handleError);
+        // return this.http.post(url, queryString, options)
+        //     .subscribe(function (response) {
+        //         console.log('http send post success');
+        //         callBackSuccess(response);
+        //     }, function (error) {
+        //         console.log('http send post failed');
+        //         // this will log error message
+        //         this.handleError;
+        //         callBackFailed(error);
+        //     }, function () {
+        //         //complete
+        //         console.log('http send post complete');
+        //     });
     };
     DataAccessService = __decorate([
         core_1.Injectable(), 

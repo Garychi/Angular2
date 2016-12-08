@@ -21,7 +21,7 @@ var MainContentComponent = (function () {
     }
     MainContentComponent.prototype.getAngularInfo = function () {
         var _this = this;
-        var url = "http://localhost:8080/DWGateway/restful/StockOutService/IStockOutService/stockOutGet";
+        var url = "";
         var queryString = {};
         // queryString["serviceId"] = "StockOutGet";
         this.dataAccessService.getMockData(url, queryString)
