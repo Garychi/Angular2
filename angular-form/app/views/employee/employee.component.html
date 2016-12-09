@@ -1,0 +1,35 @@
+<div>
+    <h1>This is Employee Page</h1>
+    <div>
+        <button (click)="searchEmployee()">search</button>
+    </div>
+    <div>
+        <div>
+            <div class="container">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr ng-if="bills.length>1" style="text-align: center;">
+                            <td>員工編號</td>
+                            <td>員工姓名</td>
+                            <td>職務</td>
+                            <td>MGR</td>
+                            <td>到職日期</td>
+                            <td>SAL</td>
+                            <td>COMM</td>
+                            <td>部門XX</td>
+                        </tr>
+                        <tr *ngFor="let employee of Employees" style="text-align: center;">
+                            <td><label>{{employee.EMPNO}}</label></td>
+                            <td><label>{{employee.ENAME}}</label></td>
+                            <td><label>{{employee.JOB}}</label></td>
+                            <td><label>{{employee.MGR}}</label></td>
+                            <td><label>{{employee.HIREDATE}}</label></td>
+                            <td><label>{{employee.SAL}}</label></td>
+                            <td><label>{{employee.COMM}}</label></td>
+                            <td><label>{{employee.DEPTNO}}</label></td>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,6 +7,7 @@ import {ModalComponentModule} from '../commons/openWindow/modal.module';
 
 
 import {FinTechComponent} from './fintech.component';
+import {FintechService} from "../../service/FintechService";
 
 @NgModule({
     imports:[
@@ -18,6 +19,9 @@ import {FinTechComponent} from './fintech.component';
     ],
     exports:[
         FinTechComponent
+    ],
+    providers:[
+        FintechService
     ]
 })
 

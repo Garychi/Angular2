@@ -12,15 +12,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by Mos on 2016/11/22.
  */
 var core_1 = require('@angular/core');
-var DataAccessService_1 = require('../../service/DataAccessService');
+var FintechService_1 = require("../../service/FintechService");
 var FinTechComponent = (function () {
-    function FinTechComponent(dataAccessService) {
-        this.dataAccessService = dataAccessService;
+    function FinTechComponent(fintechService) {
+        this.fintechService = fintechService;
     }
     FinTechComponent.prototype.search = function () {
         var _this = this;
         console.log('sendRequest');
-        this.dataAccessService.getFarmInfo()
+        this.fintechService.getFintechInfo()
             .subscribe(function (response) { return _this.myNews = response; }, function (error) { return _this.callBackFailed(error); }, function complete() {
             console.log('complete');
         });
@@ -36,7 +36,7 @@ var FinTechComponent = (function () {
             selector: 'fintech',
             templateUrl: 'fintech.component.html'
         }), 
-        __metadata('design:paramtypes', [DataAccessService_1.DataAccessService])
+        __metadata('design:paramtypes', [FintechService_1.FintechService])
     ], FinTechComponent);
     return FinTechComponent;
 }());

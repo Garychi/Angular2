@@ -3,8 +3,8 @@
  */
 import {Component} from '@angular/core';
 
-import {DataAccessService} from '../../service/DataAccessService';
 import {News} from './News';
+import {FintechService} from "../../service/FintechService";
 
 @Component({
     moduleId: module.id,
@@ -14,9 +14,9 @@ import {News} from './News';
 
 export class FinTechComponent {
     private errorMessage;
-    private myNews : News[];
+    private myNews: News[];
 
-    constructor(private dataAccessService: DataAccessService) {
+    constructor(private fintechService: FintechService) {
 
     }
 
@@ -24,9 +24,9 @@ export class FinTechComponent {
     private search() {
         console.log('sendRequest');
 
-        this.dataAccessService.getFarmInfo()
+        this.fintechService.getFintechInfo()
             .subscribe(
-                response => this.myNews =response,
+                response => this.myNews = response,
                 error => this.callBackFailed(error),
                 function complete() {
                     console.log('complete');

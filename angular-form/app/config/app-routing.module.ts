@@ -6,12 +6,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 import {FinTechComponent} from '../views/fintech/fintech.component';
 import {StocksComponent} from '../views/stocks/stocks.component';
+import {EmployeeComponent} from '../views/employee/employee.component';
 
 
 const routes: Routes = [
     { path: '', redirectTo: '/fintech', pathMatch: 'full' },
     { path: 'fintech',  component: FinTechComponent },
-    { path: 'stocks',  component: StocksComponent }
+    { path: 'stocks',  component: StocksComponent },
+    { path: 'employee',  component: EmployeeComponent }
     // { path: 'detail/:id', component: HeroDetailComponent },
     // { path: 'game',     component: HeroesComponent }
 ];

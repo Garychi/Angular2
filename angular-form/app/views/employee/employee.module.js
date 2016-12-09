@@ -9,35 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /**
- * Created by Mos on 2016/11/22.
+ * Created by Mos on 2016/12/8.
  */
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
-var modal_module_1 = require('../commons/openWindow/modal.module');
-var fintech_component_1 = require('./fintech.component');
-var FintechService_1 = require("../../service/FintechService");
-var FintechModule = (function () {
-    function FintechModule() {
+var employee_component_1 = require('./employee.component');
+var EmployeeModule = (function () {
+    function EmployeeModule() {
     }
-    FintechModule = __decorate([
+    EmployeeModule = __decorate([
         core_1.NgModule({
             imports: [
-                platform_browser_1.BrowserModule,
-                modal_module_1.ModalComponentModule
+                platform_browser_1.BrowserModule
             ],
             declarations: [
-                fintech_component_1.FinTechComponent
+                employee_component_1.EmployeeComponent
             ],
             exports: [
-                fintech_component_1.FinTechComponent
-            ],
-            providers: [
-                FintechService_1.FintechService
+                employee_component_1.EmployeeComponent
             ]
         }), 
         __metadata('design:paramtypes', [])
-    ], FintechModule);
-    return FintechModule;
+    ], EmployeeModule);
+    return EmployeeModule;
 }());
-exports.FintechModule = FintechModule;
-//# sourceMappingURL=fintech.module.js.map
+exports.EmployeeModule = EmployeeModule;
+//# sourceMappingURL=employee.module.js.map

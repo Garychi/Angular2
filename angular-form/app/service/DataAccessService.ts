@@ -8,6 +8,7 @@ import {Observable}     from 'rxjs/Observable';
 
 import {BOXES} from '../mock-boxes';
 import {News} from '../views/fintech/News';
+import {Employee} from "../views/employee/Employee";
 
 
 @Injectable()
@@ -56,7 +57,7 @@ export class DataAccessService {
     getMenuContent() {
         var data = [
             {"menuId": "0001", "menuName": "Home", "parent": "root", "path": "/fintech"},
-            {"menuId": "0002", "menuName": "Game", "parent": "root", "path": "/fintech"},
+            {"menuId": "0002", "menuName": "Employee", "parent": "root", "path": "/employee"},
             {"menuId": "0003", "menuName": "Stocks", "parent": "stocks", "path": "/stocks"},
             {"menuId": "0004", "menuName": "Fintech", "parent": "fintech", "path": "/fintech"},
             {"menuId": "0005", "menuName": "Info", "parent": "root", "path": "/fintech"}
@@ -65,9 +66,26 @@ export class DataAccessService {
         return data;
     }
 
+    post(url,body,options){
+        return this.http.post(url, JSON.stringify(body), options)
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
+
     getFarmInfo() : Observable<News[]>{
         let headers = new Headers({'Content-Type': 'application/json'});
-        let url = "http://localhost:8080/FarmProject/services/restfulService/fintech/getData";
+        let url = "http://localhost:8085/FarmProject/services/restfulService/fintech/getDataJson";
+        let queryString = [{"data":"aaa"}];
+
+        let options = new RequestOptions({headers: headers});
+        return this.http.post(url, JSON.stringify(queryString), options)
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
+
+    getEmployeeInfo():Observable<Employee[]>{
+        let headers = new Headers({'Content-Type': 'application/json'});
+        let url = "http://localhost:8085/FarmProject/services/restfulService/fintech/getData";
         let queryString = [];
 
         let options = new RequestOptions({headers: headers});

@@ -54,16 +54,30 @@ var DataAccessService = (function () {
     DataAccessService.prototype.getMenuContent = function () {
         var data = [
             { "menuId": "0001", "menuName": "Home", "parent": "root", "path": "/fintech" },
-            { "menuId": "0002", "menuName": "Game", "parent": "root", "path": "/fintech" },
+            { "menuId": "0002", "menuName": "Employee", "parent": "root", "path": "/employee" },
             { "menuId": "0003", "menuName": "Stocks", "parent": "stocks", "path": "/stocks" },
             { "menuId": "0004", "menuName": "Fintech", "parent": "fintech", "path": "/fintech" },
             { "menuId": "0005", "menuName": "Info", "parent": "root", "path": "/fintech" }
         ];
         return data;
     };
+    DataAccessService.prototype.post = function (url, body, options) {
+        return this.http.post(url, JSON.stringify(body), options)
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
     DataAccessService.prototype.getFarmInfo = function () {
         var headers = new http_2.Headers({ 'Content-Type': 'application/json' });
-        var url = "http://localhost:8080/FarmProject/services/restfulService/fintech/getData";
+        var url = "http://localhost:8085/FarmProject/services/restfulService/fintech/getDataJson";
+        var queryString = [{ "data": "aaa" }];
+        var options = new http_2.RequestOptions({ headers: headers });
+        return this.http.post(url, JSON.stringify(queryString), options)
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
+    DataAccessService.prototype.getEmployeeInfo = function () {
+        var headers = new http_2.Headers({ 'Content-Type': 'application/json' });
+        var url = "http://localhost:8085/FarmProject/services/restfulService/fintech/getData";
         var queryString = [];
         var options = new http_2.RequestOptions({ headers: headers });
         return this.http.post(url, queryString, options)

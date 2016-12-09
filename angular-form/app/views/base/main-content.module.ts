@@ -9,6 +9,7 @@ import { RouterModule} from '@angular/router';
 //Custom Module
 import {FintechModule} from '../fintech/fintech.module';
 import {StocksModule} from '../stocks/stocks.module';
+import {EmployeeModule} from "../employee/employee.module";
 
 
 import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
@@ -24,6 +25,7 @@ import {HighlightDirective} from '../../directive/HighlightDirective';
 import { NgGrid, NgGridItem } from 'angular2-grid';
 
 
+
 @NgModule({
     imports:      [
         BrowserModule,
@@ -32,6 +34,7 @@ import { NgGrid, NgGridItem } from 'angular2-grid';
         TooltipModule,
         FintechModule,
         StocksModule,
+        EmployeeModule,
         RouterModule,
     ],
     declarations: [

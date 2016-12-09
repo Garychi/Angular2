@@ -15,10 +15,12 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var fintech_component_1 = require('../views/fintech/fintech.component');
 var stocks_component_1 = require('../views/stocks/stocks.component');
+var employee_component_1 = require('../views/employee/employee.component');
 var routes = [
     { path: '', redirectTo: '/fintech', pathMatch: 'full' },
     { path: 'fintech', component: fintech_component_1.FinTechComponent },
-    { path: 'stocks', component: stocks_component_1.StocksComponent }
+    { path: 'stocks', component: stocks_component_1.StocksComponent },
+    { path: 'employee', component: employee_component_1.EmployeeComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
