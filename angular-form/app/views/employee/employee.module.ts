@@ -6,6 +6,7 @@ import {BrowserModule} from '@angular/platform-browser';
 
 
 import {EmployeeComponent} from './employee.component';
+import {EmployeeService} from "../../service/EmployeeService";
 
 @NgModule({
     imports:[
@@ -16,7 +17,11 @@ import {EmployeeComponent} from './employee.component';
     ],
     exports:[
         EmployeeComponent
+    ],
+    providers:[
+        EmployeeService
     ]
+
 })
 
 export class EmployeeModule{}

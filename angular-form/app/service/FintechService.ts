@@ -1,7 +1,7 @@
 /**
  * Created by Mos on 2016/12/9.
  */
-import {Injectable,Inject} from "@angular/core";
+import {Injectable} from "@angular/core";
 import {Observable}     from 'rxjs/Observable';
 import {DataAccessService} from "./DataAccessService";
 import {Headers, RequestOptions} from '@angular/http';

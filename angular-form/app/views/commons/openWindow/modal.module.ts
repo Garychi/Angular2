@@ -7,11 +7,14 @@ import { ModalModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import {ModalComponent} from './modal.component';
 
+// import {DatepickerComponentModule} from '../../commons/datePicker/datepicker.module';
+
 
 @NgModule({
     imports:      [
         BrowserModule,
         ModalModule
+        // DatepickerComponentModule
     ],
     declarations: [
         ModalComponent

@@ -14,6 +14,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var modal_module_1 = require('../commons/openWindow/modal.module');
+var datepicker_module_1 = require('../commons/datePicker/datepicker.module');
 var fintech_component_1 = require('./fintech.component');
 var FintechService_1 = require("../../service/FintechService");
 var FintechModule = (function () {
@@ -23,7 +24,8 @@ var FintechModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                modal_module_1.ModalComponentModule
+                modal_module_1.ModalComponentModule,
+                datepicker_module_1.DatepickerComponentModule
             ],
             declarations: [
                 fintech_component_1.FinTechComponent

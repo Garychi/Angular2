@@ -85,12 +85,16 @@ export class DataAccessService {
 
     getEmployeeInfo():Observable<Employee[]>{
         let headers = new Headers({'Content-Type': 'application/json'});
-        let url = "http://localhost:8085/FarmProject/services/restfulService/fintech/getData";
-        let queryString = [];
+        let url = "http://localhost:8085/FarmProject/services/restfulService/employee/search";
+        let queryString = [{"data":"123"}];
 
         let options = new RequestOptions({headers: headers});
         return this.http.post(url, queryString, options)
             .map(this.extractData)
             .catch(this.handleError);
+    }
+
+    addEmployee(){
+
     }
 }

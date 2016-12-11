@@ -77,12 +77,14 @@ var DataAccessService = (function () {
     };
     DataAccessService.prototype.getEmployeeInfo = function () {
         var headers = new http_2.Headers({ 'Content-Type': 'application/json' });
-        var url = "http://localhost:8085/FarmProject/services/restfulService/fintech/getData";
-        var queryString = [];
+        var url = "http://localhost:8085/FarmProject/services/restfulService/employee/search";
+        var queryString = [{ "data": "123" }];
         var options = new http_2.RequestOptions({ headers: headers });
         return this.http.post(url, queryString, options)
             .map(this.extractData)
             .catch(this.handleError);
+    };
+    DataAccessService.prototype.addEmployee = function () {
     };
     DataAccessService = __decorate([
         core_1.Injectable(), 

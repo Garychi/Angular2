@@ -12,15 +12,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by Mos on 2016/12/8.
  */
 var core_1 = require('@angular/core');
-var DataAccessService_1 = require('../../service/DataAccessService');
+var EmployeeService_1 = require('../../service/EmployeeService');
 var EmployeeComponent = (function () {
-    function EmployeeComponent(dataAccessService) {
-        this.dataAccessService = dataAccessService;
+    function EmployeeComponent(employeeService) {
+        this.employeeService = employeeService;
     }
     EmployeeComponent.prototype.searchEmployee = function () {
         var _this = this;
-        this.dataAccessService.getEmployeeInfo()
+        var keyword;
+        this.employeeService.search(keyword)
             .subscribe(function (response) { return _this.Employees = response; }, function (error) { return _this.handleError(error); }, function complete() {
+            console.log('complete');
+        });
+    };
+    EmployeeComponent.prototype.addEmp = function () {
+        var body = {
+            "empno": "001", "ename": "Jack", "job": "CEO",
+            "mgr": "10", "hiredate": "2016-12-11", "sal": "10",
+            "comm": "100", "depno": "20"
+        };
+        this.employeeService.addEmp(body)
+            .subscribe(function (response) { return console.log(response); }, function (error) { return console.log(error); }, function complete() {
             console.log('complete');
         });
     };
@@ -33,7 +45,7 @@ var EmployeeComponent = (function () {
             selector: 'employee',
             templateUrl: 'employee.component.html'
         }), 
-        __metadata('design:paramtypes', [DataAccessService_1.DataAccessService])
+        __metadata('design:paramtypes', [EmployeeService_1.EmployeeService])
     ], EmployeeComponent);
     return EmployeeComponent;
 }());

@@ -4,7 +4,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {ModalComponentModule} from '../commons/openWindow/modal.module';
-
+import {DatepickerComponentModule} from '../commons/datePicker/datepicker.module';
 
 import {FinTechComponent} from './fintech.component';
 import {FintechService} from "../../service/FintechService";
@@ -12,7 +12,8 @@ import {FintechService} from "../../service/FintechService";
 @NgModule({
     imports:[
         BrowserModule,
-        ModalComponentModule
+        ModalComponentModule,
+        DatepickerComponentModule
     ],
     declarations :[
         FinTechComponent

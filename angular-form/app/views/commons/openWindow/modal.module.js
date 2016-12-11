@@ -15,6 +15,7 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var ng2_bootstrap_1 = require('ng2-bootstrap/ng2-bootstrap');
 var modal_component_1 = require('./modal.component');
+// import {DatepickerComponentModule} from '../../commons/datePicker/datepicker.module';
 var ModalComponentModule = (function () {
     function ModalComponentModule() {
     }

@@ -14,6 +14,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var employee_component_1 = require('./employee.component');
+var EmployeeService_1 = require("../../service/EmployeeService");
 var EmployeeModule = (function () {
     function EmployeeModule() {
     }
@@ -27,6 +28,9 @@ var EmployeeModule = (function () {
             ],
             exports: [
                 employee_component_1.EmployeeComponent
+            ],
+            providers: [
+                EmployeeService_1.EmployeeService
             ]
         }), 
         __metadata('design:paramtypes', [])

@@ -1,7 +1,8 @@
 <!-- Large modal -->
 <button class="btn btn-primary" (click)="lgModal.show()">Large modal</button>
 
-<div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -10,8 +11,49 @@
                 </button>
                 <h4 class="modal-title">Large modal</h4>
             </div>
+
             <div class="modal-body">
-                ...
+                <div class="row">
+                    <!--員工編號-->
+                    <div class="col-sm-5 col-md-5 col-lg-5">
+                        <div class="input-group-lg input-group  input-group-sm">
+                            <span class="input-group-addon" id="sizing-addon2">員工編號</span>
+                            <input type="text" class="form-control" placeholder="Username"
+                                   aria-describedby="sizing-addon2">
+                        </div>
+                    </div>
+                    <!--員工姓名-->
+                    <div class="col-sm-5 col-md-5 col-lg-5">
+                        <div class="input-group-lg input-group input-group-sm">
+                            <span class="input-group-addon" id="sizing-addon3">員工姓名</span>
+                            <input type="text" class="form-control" placeholder="Username"
+                                   aria-describedby="sizing-addon2">
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="row">
+                    <!--手機-->
+                    <div class="col-sm-5 col-md-5 col-lg-5">
+                        <div class="input-group-lg input-group  input-group-sm">
+                            <span class="input-group-addon" id="sizing-addon4">手機</span>
+                            <input type="text" class="form-control" placeholder="Username"
+                                   aria-describedby="sizing-addon2">
+                        </div>
+                    </div>
+                    <!--日期-->
+                    <div class="col-sm-5 col-md-5 col-lg-5">
+
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                     <span class="glyphicon glyphicon-calendar" ></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -20,7 +62,8 @@
 <!-- Small modal -->
 <button type="button" class="btn btn-primary" (click)="smModal.show()">Small modal</button>
 
-<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
@@ -29,16 +72,14 @@
                 </button>
                 <h4 class="modal-title">Small modal</h4>
             </div>
-            <div class="modal-body">
-                ...
-            </div>
         </div>
     </div>
 </div>
 
 <!-- control modal from parent component -->
 <button type="button" class="btn btn-primary" (click)="showChildModal()">Open child modal</button>
-<div bsModal #childModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+<div bsModal #childModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
