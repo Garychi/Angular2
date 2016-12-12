@@ -19,8 +19,7 @@ var OrganizationComponent = (function () {
     }
     OrganizationComponent.prototype.searchOrg = function () {
         var _this = this;
-        var keyword = "";
-        this.organizationService.search(keyword)
+        this.organizationService.search(this.keyword)
             .subscribe(function (response) { return _this.Organizations = response; }, function (error) { return console.log(error); }, function complete() {
             console.log('complete');
         });

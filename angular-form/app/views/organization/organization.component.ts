@@ -16,14 +16,13 @@ import {Organization} from './Organization';
 export class OrganizationComponent{
 
     Organizations:Organization[];
-
+    keyword:string;
     constructor(private organizationService:OrganizationService){
 
     }
 
     private searchOrg(){
-        let keyword="";
-        this.organizationService.search(keyword)
+        this.organizationService.search(this.keyword)
             .subscribe(response =>this.Organizations=response,
             error =>console.log(error),
             function complete() {

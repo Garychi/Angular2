@@ -21,6 +21,7 @@ var OrganizationService = (function () {
         this.options = new http_1.RequestOptions({ headers: this.headers });
     }
     OrganizationService.prototype.search = function (keyword) {
+        keyword = { "org_code": keyword, "IS_LEGAL_PERSON": "Y" };
         var url = "http://localhost:8085/FarmProject/services/restfulService/organization/search";
         return this.dataAccessService.post(url, keyword, this.options);
     };

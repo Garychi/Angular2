@@ -21,6 +21,7 @@ export class OrganizationService{
 
 
     search(keyword):Observable<Organization[]>{
+        keyword ={"org_code":keyword,"IS_LEGAL_PERSON":"Y"};
         let url ="http://localhost:8085/FarmProject/services/restfulService/organization/search";
         return this.dataAccessService.post(url,keyword,this.options);
     }

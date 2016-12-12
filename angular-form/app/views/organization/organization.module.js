@@ -12,6 +12,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by Mos on 2016/12/12.
  */
 var core_1 = require('@angular/core');
+var forms_1 = require('@angular/forms');
 var platform_browser_1 = require('@angular/platform-browser');
 var organization_component_1 = require('./organization.component');
 var OrganizationService_1 = require('../../service/OrganizationService');
@@ -21,7 +22,8 @@ var OrganizationModule = (function () {
     OrganizationModule = __decorate([
         core_1.NgModule({
             imports: [
-                platform_browser_1.BrowserModule
+                platform_browser_1.BrowserModule,
+                forms_1.FormsModule
             ],
             declarations: [
                 organization_component_1.OrganizationComponent
