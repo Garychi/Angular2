@@ -18,7 +18,7 @@ var MenuComponent = (function () {
         this.dataAccessService = dataAccessService;
     }
     MenuComponent.prototype.ngOnInit = function () {
-        this.menuArray = this.dataAccessService.getMenuContent();
+        this.menuArray = this.dataAccessService.getMenuInfo();
     };
     MenuComponent = __decorate([
         core_1.Component({

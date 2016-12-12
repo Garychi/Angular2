@@ -10,6 +10,7 @@ import { RouterModule} from '@angular/router';
 import {FintechModule} from '../fintech/fintech.module';
 import {StocksModule} from '../stocks/stocks.module';
 import {EmployeeModule} from "../employee/employee.module";
+import {OrganizationModule} from '../organization/organization.module';
 
 
 import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
@@ -35,6 +36,7 @@ import { NgGrid, NgGridItem } from 'angular2-grid';
         FintechModule,
         StocksModule,
         EmployeeModule,
+        OrganizationModule,
         RouterModule,
     ],
     declarations: [

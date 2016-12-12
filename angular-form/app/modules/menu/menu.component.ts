@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit{
     }
 
     ngOnInit():void{
-        this.menuArray=this.dataAccessService.getMenuContent();
+        this.menuArray=this.dataAccessService.getMenuInfo();
     }
 
 }

@@ -1,0 +1,80 @@
+<div>
+    <h1>This is Organization Page</h1>
+    <div>
+        <button (click)="searchOrg()">search</button>
+        <button (click)="insertOrg()">add</button>
+    </div>
+    <div>
+        <div>
+            <div class="container">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <td>組織編碼</td>
+                            <td>是否法人</td>
+                            <td>法人組織編碼</td>
+                            <td>聯繫人</td>
+                            <td>電話</td>
+                            <td>傳真</td>
+                            <td>手機</td>
+                            <td>郵箱</td>
+                            <td>地址</td>
+                            <td>其他聯繫方式</td>
+                            <td>區縣</td>
+                            <td>國家</td>
+                            <td>省/州</td>
+                            <td>市</td>
+                            <td>狀態</td>
+                            <td>創建時間</td>
+                            <td>創建人編號</td>
+                            <td>最後修改人時間</td>
+                            <td>最後修改人編號</td>
+                            <td>審核時間</td>
+                            <td>審核人編號</td>
+                            <td>登錄人公司</td>
+                            <td>交易體系Or租戶</td>
+                            <td>來源系統</td>
+                            <td>鎖定標記</td>
+                            <td>備註</td>
+                            <td>經度</td>
+                            <td>緯度</td>
+                            <td>銷售價格參照表號</td>
+                            <td>候選供應商</td>
+                        </tr>
+                        <tr *ngFor="let org of Organizations" style="text-align: center;">
+                            <td><label>{{org.ORG_CODE}}</label></td>
+                            <td><label>{{org.IS_LEGAL_PERSON}}</label></td>
+                            <td><label>{{org.LEGAL_ORG_CODE}}</label></td>
+                            <td><label>{{org.CONTACT_PERSON}}</label></td>
+                            <td><label>{{org.TEL}}</label></td>
+                            <td><label>{{org.FAX}}</label></td>
+                            <td><label>{{org.MOBILE}}</label></td>
+                            <td><label>{{org.EMAIL}}</label></td>
+                            <td><label>{{org.ADDRESS}}</label></td>
+                            <td><label>{{org.OTHER_CONTACT}}</label></td>
+                            <td><label>{{org.DISTRICT}}</label></td>
+                            <td><label>{{org.COUNTRY}}</label></td>
+                            <td><label>{{org.PROVINCE}}</label></td>
+                            <td><label>{{org.CITY}}</label></td>
+                            <td><label>{{org.STATUS}}</label></td>
+                            <td><label>{{org.CREATEDATE}}</label></td>
+                            <td><label>{{org.CREATOR}}</label></td>
+                            <td><label>{{org.MODIDATE}}</label></td>
+                            <td><label>{{org.MODIBY}}</label></td>
+                            <td><label>{{org.AUDITDATE}}</label></td>
+                            <td><label>{{org.AUDITOR}}</label></td>
+                            <td><label>{{org.COMPANY}}</label></td>
+                            <td><label>{{org.TENANTGROUP}}</label></td>
+                            <td><label>{{org.DATA_SOURCE}}</label></td>
+                            <td><label>{{org.FLAG}}</label></td>
+                            <td><label>{{org.REMARK}}</label></td>
+                            <td><label>{{org.LONGITUDE}}</label></td>
+                            <td><label>{{org.LATITUDE}}</label></td>
+                            <td><label>{{org.SALE_PRICE_REFERENCE_TABLE_NO}}</label></td>
+                            <td><label>{{org.CANDIDATE_SUPPLIER}}</label></td>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

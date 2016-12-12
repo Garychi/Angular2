@@ -17,6 +17,12 @@ export class DataAccessService {
     constructor(private http: Http) {
     }
 
+    post(url,body,options){
+        return this.http.post(url, body, options)
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
+
     private extractData(res: Response) {
         let body = res.json();
         return body || {};
@@ -54,22 +60,18 @@ export class DataAccessService {
             .catch(this.handleError);
     }
 
-    getMenuContent() {
+    getMenuInfo() {
         var data = [
             {"menuId": "0001", "menuName": "Home", "parent": "root", "path": "/fintech"},
             {"menuId": "0002", "menuName": "Employee", "parent": "root", "path": "/employee"},
-            {"menuId": "0003", "menuName": "Stocks", "parent": "stocks", "path": "/stocks"},
-            {"menuId": "0004", "menuName": "Fintech", "parent": "fintech", "path": "/fintech"},
-            {"menuId": "0005", "menuName": "Info", "parent": "root", "path": "/fintech"}
+            {"menuId": "0003", "menuName": "Stocks", "parent": "root", "path": "/stocks"},
+            {"menuId": "0004", "menuName": "Fintech", "parent": "root", "path": "/fintech"},
+            {"menuId": "0005", "menuName": "Organization", "parent": "root", "path": "/organization"}
         ];
 
         return data;
     }
 
-    post(url,body,options){
-        return this.http.post(url, body, options)
-            .map(this.extractData)
-            .catch(this.handleError);
-    }
+
 
 }

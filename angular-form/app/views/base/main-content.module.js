@@ -19,6 +19,7 @@ var router_1 = require('@angular/router');
 var fintech_module_1 = require('../fintech/fintech.module');
 var stocks_module_1 = require('../stocks/stocks.module');
 var employee_module_1 = require("../employee/employee.module");
+var organization_module_1 = require('../organization/organization.module');
 var ng2_bootstrap_1 = require('ng2-bootstrap/ng2-bootstrap');
 //Service
 var DataAccessService_1 = require('../../service/DataAccessService');
@@ -40,6 +41,7 @@ var MainContentModule = (function () {
                 fintech_module_1.FintechModule,
                 stocks_module_1.StocksModule,
                 employee_module_1.EmployeeModule,
+                organization_module_1.OrganizationModule,
                 router_1.RouterModule,
             ],
             declarations: [
