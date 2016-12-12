@@ -67,34 +67,9 @@ export class DataAccessService {
     }
 
     post(url,body,options){
-        return this.http.post(url, JSON.stringify(body), options)
+        return this.http.post(url, body, options)
             .map(this.extractData)
             .catch(this.handleError);
     }
 
-    getFarmInfo() : Observable<News[]>{
-        let headers = new Headers({'Content-Type': 'application/json'});
-        let url = "http://localhost:8085/FarmProject/services/restfulService/fintech/getDataJson";
-        let queryString = [{"data":"aaa"}];
-
-        let options = new RequestOptions({headers: headers});
-        return this.http.post(url, JSON.stringify(queryString), options)
-            .map(this.extractData)
-            .catch(this.handleError);
-    }
-
-    getEmployeeInfo():Observable<Employee[]>{
-        let headers = new Headers({'Content-Type': 'application/json'});
-        let url = "http://localhost:8085/FarmProject/services/restfulService/employee/search";
-        let queryString = [{"data":"123"}];
-
-        let options = new RequestOptions({headers: headers});
-        return this.http.post(url, queryString, options)
-            .map(this.extractData)
-            .catch(this.handleError);
-    }
-
-    addEmployee(){
-
-    }
 }
