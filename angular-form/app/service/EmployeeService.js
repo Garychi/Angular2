@@ -21,9 +21,9 @@ var EmployeeService = (function () {
         this.options = new http_1.RequestOptions({ headers: this.headers });
     }
     EmployeeService.prototype.search = function (keyword) {
-        var queryString = [{ "data": "aaa" }];
+        keyword = { "empno": "7839", "ename": "KING" };
         var url = "http://localhost:8085/FarmProject/services/restfulService/employee/search";
-        return this.dataAccessService.post(url, queryString, this.options);
+        return this.dataAccessService.post(url, keyword, this.options);
     };
     EmployeeService.prototype.addEmp = function (body) {
         var url = "http://localhost:8085/FarmProject/services/restfulService/employee/insert";

@@ -19,9 +19,10 @@ export class EmployeeService {
 
 
     search(keyword): Observable<Employee[]> {
-        let queryString = [{"data": "aaa"}];
+        keyword = {"empno": "7839","ename":"KING"};
+
         let url = "http://localhost:8085/FarmProject/services/restfulService/employee/search";
-        return this.dataAccessService.post(url, queryString, this.options);
+        return this.dataAccessService.post(url, keyword, this.options);
     }
 
     addEmp(body){

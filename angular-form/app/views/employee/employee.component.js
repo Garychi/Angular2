@@ -19,8 +19,7 @@ var EmployeeComponent = (function () {
     }
     EmployeeComponent.prototype.searchEmployee = function () {
         var _this = this;
-        var keyword;
-        this.employeeService.search(keyword)
+        this.employeeService.search(this.keyword)
             .subscribe(function (response) { return _this.Employees = response; }, function (error) { return _this.handleError(error); }, function complete() {
             console.log('complete');
         });

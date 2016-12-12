@@ -3,6 +3,7 @@
  */
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule } from '@angular/forms';
 
 
 import {EmployeeComponent} from './employee.component';
@@ -10,7 +11,8 @@ import {EmployeeService} from "../../service/EmployeeService";
 
 @NgModule({
     imports:[
-        BrowserModule
+        BrowserModule,
+        FormsModule
     ],
     declarations :[
         EmployeeComponent

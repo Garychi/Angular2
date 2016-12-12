@@ -15,14 +15,14 @@ import {Employee} from './Employee';
 export class EmployeeComponent {
 
     Employees: Employee[];
+    keyword:string;
 
     constructor(private employeeService: EmployeeService) {
 
     }
 
     private searchEmployee() {
-        var keyword;
-        this.employeeService.search(keyword)
+        this.employeeService.search(this.keyword)
             .subscribe(response => this.Employees = response,
                 error => this.handleError(error),
                 function complete() {
