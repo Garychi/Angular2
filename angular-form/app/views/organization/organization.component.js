@@ -25,6 +25,11 @@ var OrganizationComponent = (function () {
         });
     };
     OrganizationComponent.prototype.insertOrg = function () {
+        var _this = this;
+        this.organizationService.insert(this.keyword)
+            .subscribe(function (response) { return _this.Organizations = response; }, function (error) { return console.log(error); }, function complete() {
+            console.log('complete');
+        });
     };
     OrganizationComponent.prototype.updateOrg = function () {
     };

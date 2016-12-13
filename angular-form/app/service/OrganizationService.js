@@ -26,6 +26,9 @@ var OrganizationService = (function () {
         return this.dataAccessService.post(url, keyword, this.options);
     };
     OrganizationService.prototype.insert = function (body) {
+        body = { "org_code": "G12345", "IS_LEGAL_PERSON": "Y" };
+        var url = "http://localhost:8085/FarmProject/services/restfulService/organization/insert";
+        return this.dataAccessService.post(url, body, this.options);
     };
     OrganizationService.prototype.update = function (body) {
     };
