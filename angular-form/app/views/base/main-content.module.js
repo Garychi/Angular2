@@ -20,6 +20,7 @@ var fintech_module_1 = require('../fintech/fintech.module');
 var stocks_module_1 = require('../stocks/stocks.module');
 var employee_module_1 = require("../employee/employee.module");
 var organization_module_1 = require('../organization/organization.module');
+var myDynamic_module_1 = require('../commons/openWindow/myDynamic.module');
 var ng2_bootstrap_1 = require('ng2-bootstrap/ng2-bootstrap');
 //Service
 var DataAccessService_1 = require('../../service/DataAccessService');
@@ -42,6 +43,7 @@ var MainContentModule = (function () {
                 stocks_module_1.StocksModule,
                 employee_module_1.EmployeeModule,
                 organization_module_1.OrganizationModule,
+                myDynamic_module_1.MyDynamicModule,
                 router_1.RouterModule,
             ],
             declarations: [

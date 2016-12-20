@@ -62,7 +62,8 @@ var DataAccessService = (function () {
             { "menuId": "0002", "menuName": "Employee", "parent": "root", "path": "/employee" },
             { "menuId": "0003", "menuName": "Stocks", "parent": "root", "path": "/stocks" },
             { "menuId": "0004", "menuName": "Fintech", "parent": "root", "path": "/fintech" },
-            { "menuId": "0005", "menuName": "Organization", "parent": "root", "path": "/organization" }
+            { "menuId": "0005", "menuName": "Organization", "parent": "root", "path": "/organization" },
+            { "menuId": "0006", "menuName": "Test", "parent": "root", "path": "/test" }
         ];
         return data;
     };

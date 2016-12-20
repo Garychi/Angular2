@@ -8,6 +8,7 @@ import {FinTechComponent} from '../views/fintech/fintech.component';
 import {StocksComponent} from '../views/stocks/stocks.component';
 import {EmployeeComponent} from '../views/employee/employee.component';
 import {OrganizationComponent}  from '../views/organization/organization.component';
+import {MyDynamicFormComponent} from '../views/commons/openWindow/MyDynamicFormComponent';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
     { path: 'fintech',  component: FinTechComponent },
     { path: 'stocks',  component: StocksComponent },
     { path: 'employee',  component: EmployeeComponent },
-    { path: 'organization',  component: OrganizationComponent }
+    { path: 'organization',  component: OrganizationComponent },
+    { path: 'test',  component: MyDynamicFormComponent },
     // { path: 'detail/:id', component: HeroDetailComponent },
     // { path: 'game',     component: HeroesComponent }
 ];

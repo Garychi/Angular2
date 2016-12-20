@@ -9,6 +9,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {DynamicFormsCoreModule} from "@ng2-dynamic-forms/core";
 import {DynamicFormsPrimeNGUIModule} from "@ng2-dynamic-forms/ui-primeng";
 
+import {DynamicFormService} from "@ng2-dynamic-forms/core";
 import {MyDynamicFormComponent} from './MyDynamicFormComponent';
 
 @NgModule({
@@ -16,12 +17,16 @@ import {MyDynamicFormComponent} from './MyDynamicFormComponent';
         BrowserModule,
         FormsModule,
         ReactiveFormsModule,
-        DynamicFormsCoreModule.forRoot(),
+        DynamicFormsCoreModule,
         DynamicFormsPrimeNGUIModule
     ],
     declarations: [
         MyDynamicFormComponent
     ],
+    providers:[
+        DynamicFormService
+    ],
     exports:    [ MyDynamicFormComponent ]
+
 })
 export class MyDynamicModule { }

@@ -14,7 +14,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var MY_DYNAMIC_FORM_MODEL_1 = require("./MY_DYNAMIC_FORM_MODEL");
 var core_2 = require("@ng2-dynamic-forms/core");
-// import { ReactiveFormsModule } from '@angular/forms';
+// REACTIVE_FORM_DIRECTIVES
 var MyDynamicFormComponent = (function () {
     function MyDynamicFormComponent(dynamicFormService) {
         this.dynamicFormService = dynamicFormService;
@@ -26,8 +26,9 @@ var MyDynamicFormComponent = (function () {
     MyDynamicFormComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'dynamic-test',
-            templateUrl: 'dynamicForm.component.html'
+            selector: 'dynamic-form-test',
+            templateUrl: 'dynamicForm.component.html',
+            encapsulation: core_1.ViewEncapsulation.None
         }), 
         __metadata('design:paramtypes', [core_2.DynamicFormService])
     ], MyDynamicFormComponent);

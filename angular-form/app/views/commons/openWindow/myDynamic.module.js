@@ -17,6 +17,7 @@ var forms_1 = require('@angular/forms');
 var forms_2 = require("@angular/forms");
 var core_2 = require("@ng2-dynamic-forms/core");
 var ui_primeng_1 = require("@ng2-dynamic-forms/ui-primeng");
+var core_3 = require("@ng2-dynamic-forms/core");
 var MyDynamicFormComponent_1 = require('./MyDynamicFormComponent');
 var MyDynamicModule = (function () {
     function MyDynamicModule() {
@@ -27,11 +28,14 @@ var MyDynamicModule = (function () {
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
                 forms_2.ReactiveFormsModule,
-                core_2.DynamicFormsCoreModule.forRoot(),
+                core_2.DynamicFormsCoreModule,
                 ui_primeng_1.DynamicFormsPrimeNGUIModule
             ],
             declarations: [
                 MyDynamicFormComponent_1.MyDynamicFormComponent
+            ],
+            providers: [
+                core_3.DynamicFormService
             ],
             exports: [MyDynamicFormComponent_1.MyDynamicFormComponent]
         }), 
