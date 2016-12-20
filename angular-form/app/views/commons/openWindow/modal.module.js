@@ -13,9 +13,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  */
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var forms_1 = require('@angular/forms');
 var ng2_bootstrap_1 = require('ng2-bootstrap/ng2-bootstrap');
+var primeng_1 = require('primeng/primeng');
+// import {CalendarComponentModule} from '../calendar/calendar.module';
 var modal_component_1 = require('./modal.component');
-// import {DatepickerComponentModule} from '../../commons/datePicker/datepicker.module';
 var ModalComponentModule = (function () {
     function ModalComponentModule() {
     }
@@ -23,7 +25,9 @@ var ModalComponentModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                ng2_bootstrap_1.ModalModule
+                ng2_bootstrap_1.ModalModule,
+                forms_1.FormsModule,
+                primeng_1.CalendarModule
             ],
             declarations: [
                 modal_component_1.ModalComponent

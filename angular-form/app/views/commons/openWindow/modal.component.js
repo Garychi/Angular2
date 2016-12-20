@@ -13,14 +13,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  */
 var core_1 = require('@angular/core');
 var ng2_bootstrap_1 = require('ng2-bootstrap/ng2-bootstrap');
+// import {CalendarComponent} from "../calendar/calendar.component";
 var ModalComponent = (function () {
     function ModalComponent() {
+        console.log('modal constructor init complete');
     }
+    ModalComponent.prototype.ngOnInit = function () {
+        console.log('modal init complete');
+    };
     ModalComponent.prototype.showChildModal = function () {
         this.childModal.show();
     };
     ModalComponent.prototype.hideChildModal = function () {
         this.childModal.hide();
+    };
+    ModalComponent.prototype.add = function () {
+        console.log(this.startDate);
     };
     __decorate([
         core_1.ViewChild('childModal'), 

@@ -14,6 +14,7 @@
             'ng2-bootstrap/ng2-bootstrap': 'node_modules/ng2-bootstrap/bundles/ng2-bootstrap.umd.js',
             'moment': 'node_modules/moment/moment.js',
 
+
             app: 'app',
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
@@ -27,7 +28,11 @@
             // other libraries
             'rxjs': 'npm:rxjs',
             'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
-            'angular2-grid': 'node_modules/angular2-grid/dist'
+            'angular2-grid': 'node_modules/angular2-grid/dist',
+            //calendar
+            'primeng': 'npm:primeng',
+            "@ng2-dynamic-forms/core": "npm:@ng2-dynamic-forms/core/bundles/core.umd.js",
+            "@ng2-dynamic-forms/ui-primeng": "npm:@ng2-dynamic-forms/ui-primeng/bundles/ui-primeng.umd.js"
 
         },
         // packages tells the System loader how to load when no filename and/or no extension
@@ -37,8 +42,12 @@
                 defaultExtension: 'js'
             },
             rxjs: {defaultExtension: 'js'},
-            'angular-in-memory-web-api': {main: './index.js',defaultExtension: 'js'},
-            'angular2-grid': { main: 'main.js',  defaultExtension: 'js' }
+            'angular-in-memory-web-api': {main: './index.js', defaultExtension: 'js'},
+            'angular2-grid': {main: 'main.js', defaultExtension: 'js'},
+
+            primeng: {
+                defaultExtension: 'js'
+            }
         }
     });
 })(this);

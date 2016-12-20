@@ -1,8 +1,9 @@
 /**
  * Created by Mos on 2016/11/15.
  */
-import { Component ,ViewChild} from '@angular/core';
+import { Component ,ViewChild,OnInit} from '@angular/core';
 import { ModalDirective } from 'ng2-bootstrap/ng2-bootstrap';
+// import {CalendarComponent} from "../calendar/calendar.component";
 
 
 @Component({
@@ -11,8 +12,20 @@ import { ModalDirective } from 'ng2-bootstrap/ng2-bootstrap';
     templateUrl:'modal.component.html'
 })
 
-export class ModalComponent{
+export class ModalComponent implements OnInit{
     @ViewChild('childModal') public childModal:ModalDirective;
+
+    private startDate :Date;
+
+    private values :Map<string,Object>;
+
+    constructor(){
+        console.log('modal constructor init complete');
+    }
+
+    ngOnInit():void{
+        console.log('modal init complete');
+    }
 
     public showChildModal():void {
         this.childModal.show();
@@ -20,5 +33,9 @@ export class ModalComponent{
 
     public hideChildModal():void {
         this.childModal.hide();
+    }
+
+    private add(){
+        console.log(this.startDate);
     }
 }

@@ -1,26 +1,31 @@
 /**
  * Created by Mos on 2016/11/15.
  */
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { ModalModule } from 'ng2-bootstrap/ng2-bootstrap';
+import {NgModule}      from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
+import {ModalModule} from 'ng2-bootstrap/ng2-bootstrap';
+
+import {CalendarModule} from 'primeng/primeng';
+// import {CalendarComponentModule} from '../calendar/calendar.module';
 
 import {ModalComponent} from './modal.component';
 
-// import {DatepickerComponentModule} from '../../commons/datePicker/datepicker.module';
-
 
 @NgModule({
-    imports:      [
+    imports: [
         BrowserModule,
-        ModalModule
-        // DatepickerComponentModule
+        ModalModule,
+        FormsModule,
+        CalendarModule
+        // CalendarComponentModule
     ],
     declarations: [
         ModalComponent
     ],
-    exports:    [
+    exports: [
         ModalComponent
     ]
 })
-export class ModalComponentModule { }
+export class ModalComponentModule {
+}

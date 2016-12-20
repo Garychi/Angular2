@@ -17,7 +17,7 @@ export class FinTechComponent {
     private myNews: News[];
 
     constructor(private fintechService: FintechService) {
-
+        console.log('fintech construct init complete');
     }
 
 

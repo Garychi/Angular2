@@ -16,6 +16,7 @@ var FintechService_1 = require("../../service/FintechService");
 var FinTechComponent = (function () {
     function FinTechComponent(fintechService) {
         this.fintechService = fintechService;
+        console.log('fintech construct init complete');
     }
     FinTechComponent.prototype.search = function () {
         var _this = this;

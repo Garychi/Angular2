@@ -43,15 +43,18 @@
                     </div>
                     <!--日期-->
                     <div class="col-sm-5 col-md-5 col-lg-5">
-
-                        <div class="form-group">
-                            <div class='input-group date' id='datetimepicker1'>
-                                <input type='text' class="form-control" />
-                                <span class="input-group-addon">
-                                     <span class="glyphicon glyphicon-calendar" ></span>
-                                </span>
-                            </div>
+                        <!--<myCalendar></myCalendar>-->
+                        <div>
+                            <label>起始日期</label>
+                            <p-calendar [(ngModel)]="startDate" [showIcon]="true"></p-calendar>
+                            <!--<span style="margin-left:35px">{{startDate|date}}</span>-->
                         </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 col-md-5 col-lg-5">
+                        <button (click)="add()">新增</button>
                     </div>
                 </div>
             </div>

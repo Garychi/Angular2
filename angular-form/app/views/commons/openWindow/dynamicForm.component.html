@@ -1,0 +1,6 @@
+<form [formGroup]="myForm">
+
+    <dynamic-test *ngFor="let controlModel of myDynamicFormModel"
+                                    [controlGroup]="myForm"
+                                    [model]="controlModel"></dynamic-test>
+</form>
