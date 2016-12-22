@@ -6,7 +6,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {ModalComponentModule} from '../commons/openWindow/modal.module';
 import {DatepickerComponentModule} from '../commons/datePicker/datepicker.module';
 
-import {MyDynamicModule} from '../../views/commons/openWindow/myDynamic.module';
+import {MyDynamicModule} from '../commons/dynamic/myDynamic.module';
 
 // import {ReactiveFormsModule} from "@angular/forms";
 // import {DynamicFormsCoreModule} from "@ng2-dynamic-forms/core";
