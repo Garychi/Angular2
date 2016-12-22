@@ -15,7 +15,7 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var modal_module_1 = require('../commons/openWindow/modal.module');
 var datepicker_module_1 = require('../commons/datePicker/datepicker.module');
-var myDynamic_module_1 = require('../../views/commons/openWindow/myDynamic.module');
+var myDynamic_module_1 = require('../commons/dynamic/myDynamic.module');
 // import {ReactiveFormsModule} from "@angular/forms";
 // import {DynamicFormsCoreModule} from "@ng2-dynamic-forms/core";
 // import {DynamicFormsPrimeNGUIModule} from "@ng2-dynamic-forms/ui-primeng";
