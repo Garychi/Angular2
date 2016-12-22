@@ -8,7 +8,7 @@ import {FinTechComponent} from '../views/fintech/fintech.component';
 import {StocksComponent} from '../views/stocks/stocks.component';
 import {EmployeeComponent} from '../views/employee/employee.component';
 import {OrganizationComponent}  from '../views/organization/organization.component';
-import {MyDynamicFormComponent} from '../views/commons/openWindow/MyDynamicFormComponent';
+import {MyDynamicFormComponent} from '../views/commons/dynamic/MyDynamicFormComponent';
 
 
 const routes: Routes = [

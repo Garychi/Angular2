@@ -17,7 +17,7 @@ var fintech_component_1 = require('../views/fintech/fintech.component');
 var stocks_component_1 = require('../views/stocks/stocks.component');
 var employee_component_1 = require('../views/employee/employee.component');
 var organization_component_1 = require('../views/organization/organization.component');
-var MyDynamicFormComponent_1 = require('../views/commons/openWindow/MyDynamicFormComponent');
+var MyDynamicFormComponent_1 = require('../views/commons/dynamic/MyDynamicFormComponent');
 var routes = [
     { path: '', redirectTo: '/fintech', pathMatch: 'full' },
     { path: 'fintech', component: fintech_component_1.FinTechComponent },

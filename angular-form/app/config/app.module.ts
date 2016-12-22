@@ -12,7 +12,7 @@ import '../rxjs-operators';
 import {MainContentModule} from '../views/base/main-content.module';
 import {SideContentModule} from '../views/base/side-content.module';
 import {MenuBarModule} from '../views/base/menu-bar.module';
-import {AlertComponentModule} from '../views/commons/alert.module';
+import {AlertComponentModule} from '../views/commons/alert/alert.module';
 import {ModalComponentModule} from '../views/commons/openWindow/modal.module';
 
 import {AppRoutingModule} from './app-routing.module';

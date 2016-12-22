@@ -20,7 +20,7 @@ require('../rxjs-operators');
 var main_content_module_1 = require('../views/base/main-content.module');
 var side_content_module_1 = require('../views/base/side-content.module');
 var menu_bar_module_1 = require('../views/base/menu-bar.module');
-var alert_module_1 = require('../views/commons/alert.module');
+var alert_module_1 = require('../views/commons/alert/alert.module');
 var modal_module_1 = require('../views/commons/openWindow/modal.module');
 var app_routing_module_1 = require('./app-routing.module');
 var app_component_1 = require('./app.component');

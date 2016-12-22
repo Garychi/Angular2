@@ -11,7 +11,7 @@ import {FintechModule} from '../fintech/fintech.module';
 import {StocksModule} from '../stocks/stocks.module';
 import {EmployeeModule} from "../employee/employee.module";
 import {OrganizationModule} from '../organization/organization.module';
-import {MyDynamicModule} from '../commons/openWindow/myDynamic.module';
+import {MyDynamicModule} from '../commons/dynamic/myDynamic.module';
 
 import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
 
