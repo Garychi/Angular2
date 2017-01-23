@@ -1,0 +1,17 @@
+{
+  "HOME": {
+    "TITLE": "標題",
+    "SELECT": "選取語言",
+    "TEST":{
+          "name":"老闆"
+    }
+  },
+  "Button":{
+    "default":"還原預設值"
+  },
+  "Fintech":{
+            "title":"這是金融科技內容",
+            "picture":"圖片區",
+            "authorInfo":"作者資訊"
+       }
+}

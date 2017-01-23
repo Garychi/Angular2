@@ -1,0 +1,15 @@
+{
+  "HOME": {
+    "TITLE": "Hello Angular 2 with ng2-translate!",
+    "SELECT": "Change language",
+    "TEST": {
+      "name": "BOSS"
+    }
+  },
+  "Button": {
+    "default": "restore Defaults"
+  },
+  "Fintech": {
+    "title": "This is Fintech Content"
+  }
+}

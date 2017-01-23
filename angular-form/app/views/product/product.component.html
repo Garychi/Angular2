@@ -1,0 +1,17 @@
+<div class="prodBaseDiv">
+    <div class="prodSearchDiv">
+        <input type="text">
+        <button (click)="searchProd()">搜尋</button>
+    </div>
+    <div class="prodContent">
+        <div *ngFor="let prod of Product">
+            <img [src]="prod.pic" (click)="showDetail(prod)">
+            <div *ngIf="prod.disabled">
+                <p>名稱:<label>{{prod.name}}</label></p>
+                <p>產地:<label>{{prod.origin}}</label></p>
+                <p>方式<label>{{prod.planway}}</label></p>
+                <p><a>查看詳情</a></p>
+            </div>
+        </div>
+    </div>
+</div>
