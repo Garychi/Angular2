@@ -33,7 +33,8 @@
             'primeng': 'npm:primeng',
             "@ng2-dynamic-forms/core": "npm:@ng2-dynamic-forms/core/bundles/core.umd.js",
             "@ng2-dynamic-forms/ui-primeng": "npm:@ng2-dynamic-forms/ui-primeng/bundles/ui-primeng.umd.js",
-            "@ng2-dynamic-forms/ui-bootstrap": "npm:@ng2-dynamic-forms/ui-bootstrap/bundles/ui-bootstrap.umd.js"
+            "@ng2-dynamic-forms/ui-bootstrap": "npm:@ng2-dynamic-forms/ui-bootstrap/bundles/ui-bootstrap.umd.js",
+            'ng2-translate': 'node_modules/ng2-translate'
 
         },
         // packages tells the System loader how to load when no filename and/or no extension
@@ -48,7 +49,8 @@
 
             primeng: {
                 defaultExtension: 'js'
-            }
+            },
+            'ng2-translate': {main: 'bundles/ng2-translate.umd.js', defaultExtension: 'js'}
         }
     });
 })(this);

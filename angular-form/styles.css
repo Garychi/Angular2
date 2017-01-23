@@ -14,7 +14,8 @@ body {
 }
 
 #main-content{
-    background-color: #2aabd2;
+    /*background-color: #2aabd2;*/
+    background: linear-gradient( #b3e6b3, #40bf40);
     position: absolute;
     top: 120px;
     right: 0;
@@ -24,7 +25,8 @@ body {
 }
 
 #side-content{
-    background-color: #afd9ee;
+    /*background-color: #afd9ee;*/
+    background: linear-gradient( #b3e6b3, #40bf40);
     position: absolute;
     top: 120px;
     left: 0;
