@@ -12,6 +12,7 @@ export class FintechService{
 
     constructor(private dataAccessService:DataAccessService){
 
+
     }
 
     getFintechInfo() : Observable<News[]>{
@@ -20,6 +21,8 @@ export class FintechService{
         let queryString = [{"data":"aaa"}];
         let options = new RequestOptions({headers: headers});
         return this.dataAccessService.post(url,queryString,options);
+
+
     }
 
 }
