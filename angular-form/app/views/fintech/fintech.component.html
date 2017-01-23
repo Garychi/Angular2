@@ -1,10 +1,10 @@
 <div>
-    <h1 i18n="User welcome|An introduction header for this sample">This is Fintech Content</h1>
+    <h1>This is Fintech Content</h1>
 
 
     <!--左邊圖框-->
     <div>
-        <h3>圖片區</h3>
+        <h3>{{'Fintech.picture' | translate}}</h3>
         <button (click)="search()">FarmInfo</button>
         <open-win></open-win>
         <!--<calendar></calendar>-->
@@ -13,7 +13,7 @@
     <div>
         <!--標題-->
         <div>
-            <a>標題</a>
+            <a>Home</a>
             <ul *ngIf="myNews">
                 <li *ngFor="let news of myNews">
                     <div>
@@ -33,11 +33,19 @@
         <!--文章摘要-->
         <div>
             <h1>內文</h1>
+            <button (click)="animationTest()">animation</button>
+            <p [@slideInOut]="menuState">Animation Test</p>
         </div>
 
         <!--作者-->
         <div>
             <h4>作者資訊</h4>
+        </div>
+
+        <div>
+            <label>
+                {{ 'HOME.SELECT' | translate }}
+            </label>
         </div>
     </div>
 </div>

@@ -13,11 +13,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  */
 var core_1 = require('@angular/core');
 var FintechService_1 = require("../../service/FintechService");
+var i18nService_1 = require("../../service/i18nService");
 var FinTechComponent = (function () {
-    function FinTechComponent(fintechService) {
+    function FinTechComponent(fintechService, i18nService) {
         this.fintechService = fintechService;
-        console.log('fintech construct init complete');
+        this.i18nService = i18nService;
+        this.menuState = 'out';
     }
+    FinTechComponent.prototype.ngOnInit = function () {
+    };
     FinTechComponent.prototype.search = function () {
         var _this = this;
         console.log('sendRequest');
@@ -31,13 +35,29 @@ var FinTechComponent = (function () {
         this.errorMessage = error;
         console.log(this.errorMessage);
     };
+    FinTechComponent.prototype.animationTest = function () {
+        this.menuState = this.menuState === 'flyOut' ? 'flyIn' : 'flyOut';
+    };
     FinTechComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'fintech',
-            templateUrl: 'fintech.component.html'
+            templateUrl: 'fintech.component.html',
+            animations: [
+                core_1.trigger('slideInOut', [
+                    core_1.state('flyIn', core_1.style({
+                        transform: 'translate3d(0, 0, 0)'
+                    })),
+                    core_1.state('flyOut', core_1.style({
+                        transform: 'translate3d(100%, 0, 0)'
+                    })),
+                    core_1.transition('flyIn => flyOut', core_1.animate('400ms ease-in-out')),
+                    core_1.transition('flyOut => flyIn', core_1.animate('400ms ease-in-out'))
+                ]),
+            ],
+            styleUrls: ['fintech.component.css']
         }), 
-        __metadata('design:paramtypes', [FintechService_1.FintechService])
+        __metadata('design:paramtypes', [FintechService_1.FintechService, i18nService_1.i18nService])
     ], FinTechComponent);
     return FinTechComponent;
 }());

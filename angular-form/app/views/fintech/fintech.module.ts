@@ -7,36 +7,29 @@ import {ModalComponentModule} from '../commons/openWindow/modal.module';
 import {DatepickerComponentModule} from '../commons/datePicker/datepicker.module';
 
 import {MyDynamicModule} from '../commons/dynamic/myDynamic.module';
-
-// import {ReactiveFormsModule} from "@angular/forms";
-// import {DynamicFormsCoreModule} from "@ng2-dynamic-forms/core";
-// import {DynamicFormsPrimeNGUIModule} from "@ng2-dynamic-forms/ui-primeng";
-
-// import {MyDynamicFormComponent} from '../../views/commons/openWindow/MyDynamicFormComponent';
+import {TranslateModule} from 'ng2-translate';
 
 import {FinTechComponent} from './fintech.component';
+
 import {FintechService} from "../../service/FintechService";
+import {i18nService} from "../../service/i18nService";
 
 @NgModule({
     imports:[
         BrowserModule,
         ModalComponentModule,
         DatepickerComponentModule,
-        MyDynamicModule
-        // ReactiveFormsModule,
-        // DynamicFormsCoreModule.forRoot(),
-        // DynamicFormsPrimeNGUIModule
+        MyDynamicModule,
+        TranslateModule
     ],
     declarations :[
         FinTechComponent
-        // MyDynamicFormComponent
     ],
     exports:[
         FinTechComponent,
-        // MyDynamicFormComponent
     ],
     providers:[
-        FintechService
+        FintechService,i18nService
     ]
 })
 

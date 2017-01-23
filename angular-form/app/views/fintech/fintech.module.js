@@ -16,12 +16,10 @@ var platform_browser_1 = require('@angular/platform-browser');
 var modal_module_1 = require('../commons/openWindow/modal.module');
 var datepicker_module_1 = require('../commons/datePicker/datepicker.module');
 var myDynamic_module_1 = require('../commons/dynamic/myDynamic.module');
-// import {ReactiveFormsModule} from "@angular/forms";
-// import {DynamicFormsCoreModule} from "@ng2-dynamic-forms/core";
-// import {DynamicFormsPrimeNGUIModule} from "@ng2-dynamic-forms/ui-primeng";
-// import {MyDynamicFormComponent} from '../../views/commons/openWindow/MyDynamicFormComponent';
+var ng2_translate_1 = require('ng2-translate');
 var fintech_component_1 = require('./fintech.component');
 var FintechService_1 = require("../../service/FintechService");
+var i18nService_1 = require("../../service/i18nService");
 var FintechModule = (function () {
     function FintechModule() {
     }
@@ -31,7 +29,8 @@ var FintechModule = (function () {
                 platform_browser_1.BrowserModule,
                 modal_module_1.ModalComponentModule,
                 datepicker_module_1.DatepickerComponentModule,
-                myDynamic_module_1.MyDynamicModule
+                myDynamic_module_1.MyDynamicModule,
+                ng2_translate_1.TranslateModule
             ],
             declarations: [
                 fintech_component_1.FinTechComponent
@@ -40,7 +39,7 @@ var FintechModule = (function () {
                 fintech_component_1.FinTechComponent,
             ],
             providers: [
-                FintechService_1.FintechService
+                FintechService_1.FintechService, i18nService_1.i18nService
             ]
         }), 
         __metadata('design:paramtypes', [])
