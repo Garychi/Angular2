@@ -9,6 +9,8 @@ import {StocksComponent} from '../views/stocks/stocks.component';
 import {EmployeeComponent} from '../views/employee/employee.component';
 import {OrganizationComponent}  from '../views/organization/organization.component';
 import {MyDynamicFormComponent} from '../views/commons/dynamic/MyDynamicFormComponent';
+import {ProductComponent} from '../views/product/product.component';
+import {SettingComponent} from './setting.component';
 
 
 const routes: Routes = [
@@ -18,6 +20,8 @@ const routes: Routes = [
     { path: 'employee',  component: EmployeeComponent },
     { path: 'organization',  component: OrganizationComponent },
     { path: 'test',  component: MyDynamicFormComponent },
+    { path: 'product',  component: ProductComponent },
+    { path: 'setting',  component: SettingComponent }
     // { path: 'detail/:id', component: HeroDetailComponent },
     // { path: 'game',     component: HeroesComponent }
 ];

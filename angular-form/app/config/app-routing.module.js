@@ -18,6 +18,8 @@ var stocks_component_1 = require('../views/stocks/stocks.component');
 var employee_component_1 = require('../views/employee/employee.component');
 var organization_component_1 = require('../views/organization/organization.component');
 var MyDynamicFormComponent_1 = require('../views/commons/dynamic/MyDynamicFormComponent');
+var product_component_1 = require('../views/product/product.component');
+var setting_component_1 = require('./setting.component');
 var routes = [
     { path: '', redirectTo: '/fintech', pathMatch: 'full' },
     { path: 'fintech', component: fintech_component_1.FinTechComponent },
@@ -25,6 +27,8 @@ var routes = [
     { path: 'employee', component: employee_component_1.EmployeeComponent },
     { path: 'organization', component: organization_component_1.OrganizationComponent },
     { path: 'test', component: MyDynamicFormComponent_1.MyDynamicFormComponent },
+    { path: 'product', component: product_component_1.ProductComponent },
+    { path: 'setting', component: setting_component_1.SettingComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

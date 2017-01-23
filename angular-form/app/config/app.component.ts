@@ -1,7 +1,8 @@
 /**
  * Created by Mos on 2016/10/12.
  */
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {i18nService} from "../service/i18nService";
 
 @Component({
     selector: 'my-app',
@@ -19,8 +20,20 @@ import { Component } from '@angular/core';
             <div id="main-content">
                 <main-content></main-content>
             </div>
-        </div>
-        
+        </div>     
     `
 })
-export class AppComponent { }
+
+export class AppComponent implements OnInit {
+
+    constructor(private i18nService :i18nService) {
+
+    }
+
+    ngOnInit() {
+
+    }
+
+}
+
+

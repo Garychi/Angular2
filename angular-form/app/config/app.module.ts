@@ -1,10 +1,12 @@
 /**
  * Created by Mos on 2016/10/12.
  */
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap';
-import { HttpModule, JsonpModule } from '@angular/http';
+import {NgModule}      from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {Ng2BootstrapModule} from 'ng2-bootstrap/ng2-bootstrap';
+import {HttpModule, JsonpModule} from '@angular/http';
+import {TranslateModule} from 'ng2-translate';
+
 
 import '../rxjs-operators';
 
@@ -17,10 +19,12 @@ import {ModalComponentModule} from '../views/commons/openWindow/modal.module';
 
 import {AppRoutingModule} from './app-routing.module';
 
-import { AppComponent }   from './app.component';
+import {i18nService} from '../service/i18nService';
+
+import {AppComponent}   from './app.component';
 
 @NgModule({
-    imports:      [
+    imports: [
         BrowserModule,
         Ng2BootstrapModule,
         MainContentModule,
@@ -30,12 +34,14 @@ import { AppComponent }   from './app.component';
         ModalComponentModule,
         HttpModule,
         JsonpModule,
-        AppRoutingModule
+        AppRoutingModule,
+        TranslateModule.forRoot()
     ],
     declarations: [
         AppComponent
     ],
-    bootstrap:    [ AppComponent ]
+    bootstrap: [AppComponent],
+    providers: [i18nService]
 })
-export class AppModule { }
+export class AppModule {}
 

@@ -12,15 +12,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by Mos on 2016/10/12.
  */
 var core_1 = require('@angular/core');
+var i18nService_1 = require("../service/i18nService");
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(i18nService) {
+        this.i18nService = i18nService;
     }
+    AppComponent.prototype.ngOnInit = function () {
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <h1>My First Angular App</h1>\n        <div id=\"content\">\n            <div id=\"menu-content\">\n                <menu-bar></menu-bar>\n            </div>\n            \n            <div id=\"side-content\">\n                <side-content></side-content>\n            </div>\n            \n            <div id=\"main-content\">\n                <main-content></main-content>\n            </div>\n        </div>\n        \n    "
+            template: "\n        <h1>My First Angular App</h1>\n        <div id=\"content\">\n            <div id=\"menu-content\">\n                <menu-bar></menu-bar>\n            </div>\n            \n            <div id=\"side-content\">\n                <side-content></side-content>\n            </div>\n            \n            <div id=\"main-content\">\n                <main-content></main-content>\n            </div>\n        </div>     \n    "
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [i18nService_1.i18nService])
     ], AppComponent);
     return AppComponent;
 }());

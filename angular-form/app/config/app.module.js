@@ -15,6 +15,7 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var ng2_bootstrap_1 = require('ng2-bootstrap/ng2-bootstrap');
 var http_1 = require('@angular/http');
+var ng2_translate_1 = require('ng2-translate');
 require('../rxjs-operators');
 //custom Module
 var main_content_module_1 = require('../views/base/main-content.module');
@@ -23,6 +24,7 @@ var menu_bar_module_1 = require('../views/base/menu-bar.module');
 var alert_module_1 = require('../views/commons/alert/alert.module');
 var modal_module_1 = require('../views/commons/openWindow/modal.module');
 var app_routing_module_1 = require('./app-routing.module');
+var i18nService_1 = require('../service/i18nService');
 var app_component_1 = require('./app.component');
 var AppModule = (function () {
     function AppModule() {
@@ -39,12 +41,14 @@ var AppModule = (function () {
                 modal_module_1.ModalComponentModule,
                 http_1.HttpModule,
                 http_1.JsonpModule,
-                app_routing_module_1.AppRoutingModule
+                app_routing_module_1.AppRoutingModule,
+                ng2_translate_1.TranslateModule.forRoot()
             ],
             declarations: [
                 app_component_1.AppComponent
             ],
-            bootstrap: [app_component_1.AppComponent]
+            bootstrap: [app_component_1.AppComponent],
+            providers: [i18nService_1.i18nService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
