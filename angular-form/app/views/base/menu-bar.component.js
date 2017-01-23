@@ -16,10 +16,8 @@ var MenuBarComponent = (function () {
     function MenuBarComponent() {
     }
     MenuBarComponent.prototype.ngOnInit = function () {
-        console.log('MenuBarComponent Init Complete');
     };
     MenuBarComponent.prototype.getMenuContent = function () {
-        console.log('getMenuContent called');
     };
     MenuBarComponent = __decorate([
         core_1.Component({

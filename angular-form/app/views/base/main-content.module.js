@@ -21,6 +21,8 @@ var stocks_module_1 = require('../stocks/stocks.module');
 var employee_module_1 = require("../employee/employee.module");
 var organization_module_1 = require('../organization/organization.module');
 var myDynamic_module_1 = require('../commons/dynamic/myDynamic.module');
+var product_module_1 = require('../product/product.module');
+var setting_module_1 = require('../../config/setting.module');
 var ng2_bootstrap_1 = require('ng2-bootstrap/ng2-bootstrap');
 //Service
 var DataAccessService_1 = require('../../service/DataAccessService');
@@ -44,7 +46,9 @@ var MainContentModule = (function () {
                 employee_module_1.EmployeeModule,
                 organization_module_1.OrganizationModule,
                 myDynamic_module_1.MyDynamicModule,
+                product_module_1.ProductModule,
                 router_1.RouterModule,
+                setting_module_1.SettingModule
             ],
             declarations: [
                 main_content_component_1.MainContentComponent,

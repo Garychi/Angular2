@@ -20,11 +20,11 @@ export class ModalComponent implements OnInit{
     private values :Map<string,Object>;
 
     constructor(){
-        console.log('modal constructor init complete');
+
     }
 
     ngOnInit():void{
-        console.log('modal init complete');
+
     }
 
     public showChildModal():void {

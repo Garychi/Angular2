@@ -12,10 +12,10 @@ import { Component,OnInit } from '@angular/core';
 export class MenuBarComponent implements OnInit{
 
     ngOnInit() :void{
-        console.log('MenuBarComponent Init Complete');
+
     }
 
     getMenuContent():void{
-        console.log('getMenuContent called');
+
     }
 }
