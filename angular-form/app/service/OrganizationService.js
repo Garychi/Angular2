@@ -8,12 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Created by Mos on 2016/12/12.
  */
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var DataAccessService_1 = require("./DataAccessService");
-var http_1 = require('@angular/http');
+var http_1 = require("@angular/http");
 var OrganizationService = (function () {
     function OrganizationService(dataAccessService) {
         this.dataAccessService = dataAccessService;
@@ -34,11 +35,11 @@ var OrganizationService = (function () {
     };
     OrganizationService.prototype.delete = function (body) {
     };
-    OrganizationService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [DataAccessService_1.DataAccessService])
-    ], OrganizationService);
     return OrganizationService;
 }());
+OrganizationService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
+], OrganizationService);
 exports.OrganizationService = OrganizationService;
 //# sourceMappingURL=OrganizationService.js.map

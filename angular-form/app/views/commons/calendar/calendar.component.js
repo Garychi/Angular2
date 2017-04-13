@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Created by Mos on 2016/12/20.
  */
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var CalendarComponent = (function () {
     function CalendarComponent() {
         this.dateLabel = '日期';
@@ -19,15 +20,15 @@ var CalendarComponent = (function () {
     CalendarComponent.prototype.getDateValue = function () {
         return this.dateValue;
     };
-    CalendarComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'myCalendar',
-            templateUrl: 'calendar.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], CalendarComponent);
     return CalendarComponent;
 }());
+CalendarComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'myCalendar',
+        templateUrl: 'calendar.component.html'
+    }),
+    __metadata("design:paramtypes", [])
+], CalendarComponent);
 exports.CalendarComponent = CalendarComponent;
 //# sourceMappingURL=calendar.component.js.map

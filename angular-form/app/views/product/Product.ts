@@ -3,7 +3,17 @@
  */
 
 export interface Product{
-    name:string;
-    origin:string;
-    planway:string;
+    description:string;
+    createdate:string;
+    creator:string;
+    flag:number;
+    imgUri:string;
+    isOnshelf:string;
+    modiby:string;
+    modidate:string;
+    remark:string;
+    salesPrice:number;
+    status:string;
+    prodCode:string;
+    compCode:string;
 }

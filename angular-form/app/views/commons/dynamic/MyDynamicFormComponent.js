@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var core_2 = require("@ng2-dynamic-forms/core");
 var primeng_example_model_1 = require("./primeng-example.model");
@@ -25,16 +26,16 @@ var MyDynamicFormComponent = (function () {
     MyDynamicFormComponent.prototype.onChange = function ($event) {
         console.log("CHANGE event on " + $event.model.id + ": ", $event);
     };
-    MyDynamicFormComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: "dynamic-form-primeng-example",
-            templateUrl: "dynamicForm.component.html",
-            encapsulation: core_1.ViewEncapsulation.None
-        }), 
-        __metadata('design:paramtypes', [core_2.DynamicFormService])
-    ], MyDynamicFormComponent);
     return MyDynamicFormComponent;
 }());
+MyDynamicFormComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: "dynamic-form-primeng-example",
+        templateUrl: "dynamicForm.component.html",
+        encapsulation: core_1.ViewEncapsulation.None
+    }),
+    __metadata("design:paramtypes", [core_2.DynamicFormService])
+], MyDynamicFormComponent);
 exports.MyDynamicFormComponent = MyDynamicFormComponent;
 //# sourceMappingURL=MyDynamicFormComponent.js.map

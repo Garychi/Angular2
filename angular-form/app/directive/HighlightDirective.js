@@ -8,21 +8,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Created by Mos on 2016/11/21.
  */
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var HighlightDirective = (function () {
     function HighlightDirective(el, renderer) {
         renderer.setElementStyle(el.nativeElement, 'backgroundColor', 'yellow');
     }
-    HighlightDirective = __decorate([
-        core_1.Directive({
-            selector: '[myHighLight]'
-        }), 
-        __metadata('design:paramtypes', [core_1.ElementRef, core_1.Renderer])
-    ], HighlightDirective);
     return HighlightDirective;
 }());
+HighlightDirective = __decorate([
+    core_1.Directive({
+        selector: '[myHighLight]'
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef, core_1.Renderer])
+], HighlightDirective);
 exports.HighlightDirective = HighlightDirective;
 //# sourceMappingURL=HighlightDirective.js.map

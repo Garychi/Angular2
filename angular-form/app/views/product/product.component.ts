@@ -22,8 +22,8 @@ export class ProductComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.Product = this.productService.getProdInfo();
-        this.addAttrs(this.Product);
+        // this.Product = this.productService.getProdInfo();
+        // this.addAttrs(this.Product);
     }
 
     addAttrs(product) {
@@ -35,5 +35,17 @@ export class ProductComponent implements OnInit {
 
     private showDetail(prod) {
         prod.disabled = !prod.disabled;
+    }
+
+    private searchProd(){
+        console.log('search Prod begin ');
+        this.productService.search({"a":"ab"})
+            .subscribe(response => this.Product =response,
+            error =>console.log(error),
+            function complete(){
+                console.log('complete');
+            });
+        console.log('search Prod end');
+
     }
 }

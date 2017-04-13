@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.BOXES = [
     {
         title: "Price", text: 'Mr. Nice', "config": { "col": 1, "row": 3, "sizex": 1, "sizey": 1 },

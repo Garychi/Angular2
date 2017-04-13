@@ -2,16 +2,25 @@
   "HOME": {
     "TITLE": "標題",
     "SELECT": "選取語言",
-    "TEST":{
-          "name":"老闆"
+    "TEST": {
+      "name": "老闆"
     }
   },
-  "Button":{
-    "default":"還原預設值"
+  "Button": {
+    "default": "還原預設值"
   },
-  "Fintech":{
-            "title":"這是金融科技內容",
-            "picture":"圖片區",
-            "authorInfo":"作者資訊"
-       }
+  "Fintech": {
+    "title": "這是金融科技內容",
+    "picture": "圖片區",
+    "authorInfo": "作者資訊"
+  },
+  "Product":{
+    "title":"產品頁面",
+    "prodCode":"產品編號",
+    "compCode":"公司編號",
+    "salesPrice":"零售價",
+    "remark":"產品描述",
+    "status":"產品狀態",
+    "search_prod":"搜尋產品"
+  }
 }

@@ -8,12 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Created by Mos on 2017/1/11.
  */
 var core_1 = require("@angular/core");
 var DataAccessService_1 = require("./DataAccessService");
-var http_1 = require('@angular/http');
+var http_1 = require("@angular/http");
 var ProductService = (function () {
     function ProductService(dataAccessService) {
         this.dataAccessService = dataAccessService;
@@ -22,7 +23,7 @@ var ProductService = (function () {
     }
     ProductService.prototype.search = function (keyword) {
         keyword = { "empno": "7839", "ename": "KING" };
-        var url = "http://localhost:8085/FarmProject/services/restfulService/employee/search";
+        var url = "http://localhost:8085/FarmProject/services/restfulService/product/search";
         return this.dataAccessService.post(url, keyword, this.options);
     };
     ProductService.prototype.getProdInfo = function () {
@@ -33,11 +34,11 @@ var ProductService = (function () {
         ];
         return products;
     };
-    ProductService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [DataAccessService_1.DataAccessService])
-    ], ProductService);
     return ProductService;
 }());
+ProductService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
+], ProductService);
 exports.ProductService = ProductService;
 //# sourceMappingURL=ProductService.js.map

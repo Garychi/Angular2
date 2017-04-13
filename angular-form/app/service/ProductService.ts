@@ -21,7 +21,7 @@ export class ProductService {
     search(keyword): Observable<Product[]> {
         keyword = {"empno": "7839","ename":"KING"};
 
-        let url = "http://localhost:8085/FarmProject/services/restfulService/employee/search";
+        let url = "http://localhost:8085/FarmProject/services/restfulService/product/search";
         return this.dataAccessService.post(url, keyword, this.options);
     }
 

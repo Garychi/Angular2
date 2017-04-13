@@ -8,12 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Created by Mos on 2017/1/12.
  */
-var core_1 = require('@angular/core');
-var ng2_translate_1 = require('ng2-translate');
-var i18nService_1 = require('../service/i18nService');
+var core_1 = require("@angular/core");
+var ng2_translate_1 = require("ng2-translate");
+var i18nService_1 = require("../service/i18nService");
 var SettingComponent = (function () {
     function SettingComponent(translate, i18nService) {
         this.translate = translate;
@@ -28,16 +29,16 @@ var SettingComponent = (function () {
     };
     SettingComponent.prototype.resetSetting = function () {
     };
-    SettingComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'setting',
-            templateUrl: 'setting.component.html',
-            styleUrls: ['setting.css']
-        }), 
-        __metadata('design:paramtypes', [ng2_translate_1.TranslateService, i18nService_1.i18nService])
-    ], SettingComponent);
     return SettingComponent;
 }());
+SettingComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'setting',
+        templateUrl: 'setting.component.html',
+        styleUrls: ['setting.css']
+    }),
+    __metadata("design:paramtypes", [ng2_translate_1.TranslateService, i18nService_1.i18nService])
+], SettingComponent);
 exports.SettingComponent = SettingComponent;
 //# sourceMappingURL=setting.component.js.map

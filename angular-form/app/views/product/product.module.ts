@@ -4,20 +4,23 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {DataGridModule} from 'primeng/primeng';
+import {TranslateModule} from 'ng2-translate';
 
 import {ProductComponent} from './product.component';
 import {ProductService} from "../../service/ProductService";
+import {i18nService} from "../../service/i18nService";
 
 @NgModule({
     imports:[
         BrowserModule,
+        TranslateModule,
         DataGridModule
     ],
     declarations :[
         ProductComponent
     ],
     providers:[
-        ProductService
+        ProductService,i18nService
     ],
     exports:[
         ProductComponent

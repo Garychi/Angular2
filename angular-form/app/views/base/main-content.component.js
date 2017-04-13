@@ -8,12 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Created by Mos on 2016/10/12.
  */
-var core_1 = require('@angular/core');
-var DataAccessService_1 = require('../../service/DataAccessService');
-require('../../rxjs-operators');
+var core_1 = require("@angular/core");
+var DataAccessService_1 = require("../../service/DataAccessService");
+require("../../rxjs-operators");
 var MainContentComponent = (function () {
     function MainContentComponent(dataAccessService) {
         this.dataAccessService = dataAccessService;
@@ -32,15 +33,16 @@ var MainContentComponent = (function () {
     MainContentComponent.prototype.ngOnInit = function () {
         this.boxes = this.dataAccessService.getMockBoxData();
     };
-    MainContentComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'main-content',
-            templateUrl: 'main-content.component.html'
-        }), 
-        __metadata('design:paramtypes', [DataAccessService_1.DataAccessService])
-    ], MainContentComponent);
     return MainContentComponent;
 }());
+MainContentComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'main-content',
+        templateUrl: 'main-content.component.html'
+        // , styleUrls:['main-content.component.css']
+    }),
+    __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
+], MainContentComponent);
 exports.MainContentComponent = MainContentComponent;
 //# sourceMappingURL=main-content.component.js.map

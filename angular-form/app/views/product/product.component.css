@@ -1,3 +1,29 @@
+.prodduct{
+
+}
+
+.content{
+
+}
+
+.list-header{
+    display: flex;
+}
+
+.list-header-row{
+    flex:1;
+}
+
+.list-content{
+    display: flex;
+}
+
+.list-content-row{
+    flex:1;
+}
+
+
+
 img{
     width: 150px;
     height: 150px;

@@ -24,10 +24,10 @@ export class OrganizationComponent{
     private searchOrg(){
         this.organizationService.search(this.keyword)
             .subscribe(response =>this.Organizations=response,
-            error =>console.log(error),
-            function complete() {
-                console.log('complete');
-            })
+                error =>console.log(error),
+                function complete() {
+                    console.log('complete');
+                })
     }
 
     private insertOrg(){

@@ -13,29 +13,29 @@ import { ModalDirective } from 'ng2-bootstrap/ng2-bootstrap';
 })
 
 export class ModalComponent implements OnInit{
-    @ViewChild('childModal') public childModal:ModalDirective;
-
-    private startDate :Date;
-
-    private values :Map<string,Object>;
-
-    constructor(){
-
-    }
+    // @ViewChild('childModal') public childModal:ModalDirective;
+    //
+    // private startDate :Date;
+    //
+    // private values :Map<string,Object>;
+    //
+    // constructor(){
+    //
+    // }
 
     ngOnInit():void{
 
     }
 
-    public showChildModal():void {
-        this.childModal.show();
-    }
-
-    public hideChildModal():void {
-        this.childModal.hide();
-    }
-
-    private add(){
-        console.log(this.startDate);
-    }
+    // public showChildModal():void {
+    //     this.childModal.show();
+    // }
+    //
+    // public hideChildModal():void {
+    //     this.childModal.hide();
+    // }
+    //
+    // private add(){
+    //     console.log(this.startDate);
+    // }
 }

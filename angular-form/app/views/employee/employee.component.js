@@ -8,11 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Created by Mos on 2016/12/8.
  */
-var core_1 = require('@angular/core');
-var EmployeeService_1 = require('../../service/EmployeeService');
+var core_1 = require("@angular/core");
+var EmployeeService_1 = require("../../service/EmployeeService");
 var EmployeeComponent = (function () {
     function EmployeeComponent(employeeService) {
         this.employeeService = employeeService;
@@ -38,15 +39,15 @@ var EmployeeComponent = (function () {
     EmployeeComponent.prototype.handleError = function (error) {
         console.log(error);
     };
-    EmployeeComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'employee',
-            templateUrl: 'employee.component.html'
-        }), 
-        __metadata('design:paramtypes', [EmployeeService_1.EmployeeService])
-    ], EmployeeComponent);
     return EmployeeComponent;
 }());
+EmployeeComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'employee',
+        templateUrl: 'employee.component.html'
+    }),
+    __metadata("design:paramtypes", [EmployeeService_1.EmployeeService])
+], EmployeeComponent);
 exports.EmployeeComponent = EmployeeComponent;
 //# sourceMappingURL=employee.component.js.map

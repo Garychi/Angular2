@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Created by Mos on 2016/10/12.
  */
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var i18nService_1 = require("../service/i18nService");
 var AppComponent = (function () {
     function AppComponent(i18nService) {
@@ -19,14 +20,14 @@ var AppComponent = (function () {
     }
     AppComponent.prototype.ngOnInit = function () {
     };
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            template: "\n        <h1>My First Angular App</h1>\n        <div id=\"content\">\n            <div id=\"menu-content\">\n                <menu-bar></menu-bar>\n            </div>\n            \n            <div id=\"side-content\">\n                <side-content></side-content>\n            </div>\n            \n            <div id=\"main-content\">\n                <main-content></main-content>\n            </div>\n        </div>     \n    "
-        }), 
-        __metadata('design:paramtypes', [i18nService_1.i18nService])
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'my-app',
+        template: "\n        <h1>My First Angular App</h1>\n        <div id=\"content\">\n            <div id=\"menu-content\">\n                <menu-bar></menu-bar>\n            </div>\n            \n            <div id=\"side-content\">\n                <side-content></side-content>\n            </div>\n            \n            <div id=\"main-content\">\n                <main-content></main-content>\n            </div>\n        </div>     \n    "
+    }),
+    __metadata("design:paramtypes", [i18nService_1.i18nService])
+], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

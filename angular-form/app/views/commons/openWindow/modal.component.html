@@ -1,120 +1,120 @@
-<!-- Large modal -->
-<button class="btn btn-primary" (click)="lgModal.show()">Large modal</button>
+<!--&lt;!&ndash; Large modal &ndash;&gt;-->
+<!--<button class="btn btn-primary" (click)="lgModal.show()">Large modal</button>-->
 
-<div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" (click)="lgModal.hide()" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title">Large modal</h4>
-            </div>
+<!--<div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"-->
+     <!--aria-hidden="true">-->
+    <!--<div class="modal-dialog modal-lg">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" (click)="lgModal.hide()" aria-label="Close">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+                <!--<h4 class="modal-title">Large modal</h4>-->
+            <!--</div>-->
 
-            <div class="modal-body">
-                <div class="row">
-                    <!--員工編號-->
-                    <div class="col-sm-5 col-md-5 col-lg-5">
-                        <div class="input-group-lg input-group  input-group-sm">
-                            <span class="input-group-addon" id="sizing-addon2">員工編號</span>
-                            <input type="text" class="form-control" placeholder="Username"
-                                   aria-describedby="sizing-addon2">
-                        </div>
-                    </div>
-                    <!--員工姓名-->
-                    <div class="col-sm-5 col-md-5 col-lg-5">
-                        <div class="input-group-lg input-group input-group-sm">
-                            <span class="input-group-addon" id="sizing-addon3">員工姓名</span>
-                            <input type="text" class="form-control" placeholder="Username"
-                                   aria-describedby="sizing-addon2">
-                        </div>
-                    </div>
-                </div>
-                <!---->
-                <div class="row">
-                    <!--手機-->
-                    <div class="col-sm-5 col-md-5 col-lg-5">
-                        <div class="input-group-lg input-group  input-group-sm">
-                            <span class="input-group-addon" id="sizing-addon4">手機</span>
-                            <input type="text" class="form-control" placeholder="Username"
-                                   aria-describedby="sizing-addon2">
-                        </div>
-                    </div>
-                    <!--日期-->
-                    <div class="col-sm-5 col-md-5 col-lg-5">
-                        <!--<myCalendar></myCalendar>-->
-                        <div>
-                            <label>起始日期</label>
-                            <p-calendar [(ngModel)]="startDate" [showIcon]="true"></p-calendar>
-                            <!--<span style="margin-left:35px">{{startDate|date}}</span>-->
-                        </div>
+            <!--<div class="modal-body">-->
+                <!--<div class="row">-->
+                    <!--&lt;!&ndash;員工編號&ndash;&gt;-->
+                    <!--<div class="col-sm-5 col-md-5 col-lg-5">-->
+                        <!--<div class="input-group-lg input-group  input-group-sm">-->
+                            <!--<span class="input-group-addon" id="sizing-addon2">員工編號</span>-->
+                            <!--<input type="text" class="form-control" placeholder="Username"-->
+                                   <!--aria-describedby="sizing-addon2">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;員工姓名&ndash;&gt;-->
+                    <!--<div class="col-sm-5 col-md-5 col-lg-5">-->
+                        <!--<div class="input-group-lg input-group input-group-sm">-->
+                            <!--<span class="input-group-addon" id="sizing-addon3">員工姓名</span>-->
+                            <!--<input type="text" class="form-control" placeholder="Username"-->
+                                   <!--aria-describedby="sizing-addon2">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;&ndash;&gt;-->
+                <!--<div class="row">-->
+                    <!--&lt;!&ndash;手機&ndash;&gt;-->
+                    <!--<div class="col-sm-5 col-md-5 col-lg-5">-->
+                        <!--<div class="input-group-lg input-group  input-group-sm">-->
+                            <!--<span class="input-group-addon" id="sizing-addon4">手機</span>-->
+                            <!--<input type="text" class="form-control" placeholder="Username"-->
+                                   <!--aria-describedby="sizing-addon2">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;日期&ndash;&gt;-->
+                    <!--<div class="col-sm-5 col-md-5 col-lg-5">-->
+                        <!--&lt;!&ndash;<myCalendar></myCalendar>&ndash;&gt;-->
+                        <!--<div>-->
+                            <!--<label>起始日期</label>-->
+                            <!--<p-calendar [(ngModel)]="startDate" [showIcon]="true"></p-calendar>-->
+                            <!--&lt;!&ndash;<span style="margin-left:35px">{{startDate|date}}</span>&ndash;&gt;-->
+                        <!--</div>-->
 
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-5 col-md-5 col-lg-5">
-                        <button (click)="add()">新增</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row">-->
+                    <!--<div class="col-sm-5 col-md-5 col-lg-5">-->
+                        <!--<button (click)="add()">新增</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
-<!-- Small modal -->
-<button type="button" class="btn btn-primary" (click)="smModal.show()">Small modal</button>
+<!--&lt;!&ndash; Small modal &ndash;&gt;-->
+<!--<button type="button" class="btn btn-primary" (click)="smModal.show()">Small modal</button>-->
 
-<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" aria-label="Close" (click)="smModal.hide()">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title">Small modal</h4>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"-->
+     <!--aria-hidden="true">-->
+    <!--<div class="modal-dialog modal-sm">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" aria-label="Close" (click)="smModal.hide()">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+                <!--<h4 class="modal-title">Small modal</h4>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
-<!-- control modal from parent component -->
-<button type="button" class="btn btn-primary" (click)="showChildModal()">Open child modal</button>
-<div bsModal #childModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" aria-label="Close" (click)="hideChildModal()">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title">Child modal</h4>
-            </div>
-            <div class="modal-body">
-                I am a child modal, opened from parent component!
-            </div>
-        </div>
-    </div>
-</div>
+<!--&lt;!&ndash; control modal from parent component &ndash;&gt;-->
+<!--<button type="button" class="btn btn-primary" (click)="showChildModal()">Open child modal</button>-->
+<!--<div bsModal #childModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"-->
+     <!--aria-hidden="true">-->
+    <!--<div class="modal-dialog modal-sm">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" aria-label="Close" (click)="hideChildModal()">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+                <!--<h4 class="modal-title">Child modal</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!--I am a child modal, opened from parent component!-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
-<!-- Static modal -->
-<button type="button" class="btn btn-primary" (click)="staticModal.show()">Static modal</button>
+<!--&lt;!&ndash; Static modal &ndash;&gt;-->
+<!--<button type="button" class="btn btn-primary" (click)="staticModal.show()">Static modal</button>-->
 
-<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
-     tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" aria-label="Close" (click)="staticModal.hide()">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title">Static modal</h4>
-            </div>
-            <div class="modal-body">
-                This is static modal, backdrop click will not close it.
-                Click <b>&times;</b> to close modal.
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"-->
+     <!--tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">-->
+    <!--<div class="modal-dialog modal-sm">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" aria-label="Close" (click)="staticModal.hide()">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+                <!--<h4 class="modal-title">Static modal</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!--This is static modal, backdrop click will not close it.-->
+                <!--Click <b>&times;</b> to close modal.-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
