@@ -6,6 +6,11 @@ import {BrowserModule} from '@angular/platform-browser';
 import {DataGridModule} from 'primeng/primeng';
 import {TranslateModule} from 'ng2-translate';
 
+// import {MdDialogModule} from '@angular/material';
+// import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+// import {DialogModule} from '../dialog/dialog.module';
+
+
 import {ProductComponent} from './product.component';
 import {ProductService} from "../../service/ProductService";
 import {i18nService} from "../../service/i18nService";
@@ -14,6 +19,9 @@ import {i18nService} from "../../service/i18nService";
     imports:[
         BrowserModule,
         TranslateModule,
+        // MdDialogModule,
+        // BrowserAnimationsModule,
+        // DialogModule,
         DataGridModule
     ],
     declarations :[

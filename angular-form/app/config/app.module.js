@@ -14,6 +14,8 @@ var platform_browser_1 = require("@angular/platform-browser");
 var ng2_bootstrap_1 = require("ng2-bootstrap/ng2-bootstrap");
 var http_1 = require("@angular/http");
 var ng2_translate_1 = require("ng2-translate");
+// import {MaterialModule} from '@angular/material';
+// import {MdDialogModule} from '@angular/material';
 require("../rxjs-operators");
 //custom Module
 var main_content_module_1 = require("../views/base/main-content.module");
@@ -42,7 +44,7 @@ AppModule = __decorate([
             http_1.HttpModule,
             http_1.JsonpModule,
             app_routing_module_1.AppRoutingModule,
-            ng2_translate_1.TranslateModule.forRoot()
+            ng2_translate_1.TranslateModule.forRoot(),
         ],
         declarations: [
             app_component_1.AppComponent

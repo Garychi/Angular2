@@ -6,7 +6,8 @@ import {BrowserModule} from '@angular/platform-browser';
 import {Ng2BootstrapModule} from 'ng2-bootstrap/ng2-bootstrap';
 import {HttpModule, JsonpModule} from '@angular/http';
 import {TranslateModule} from 'ng2-translate';
-
+// import {MaterialModule} from '@angular/material';
+// import {MdDialogModule} from '@angular/material';
 
 import '../rxjs-operators';
 
@@ -35,7 +36,9 @@ import {AppComponent}   from './app.component';
         HttpModule,
         JsonpModule,
         AppRoutingModule,
-        TranslateModule.forRoot()
+        TranslateModule.forRoot(),
+        // MdDialogModule.forRoot()
+        // MaterialModule.forRoot()
     ],
     declarations: [
         AppComponent
