@@ -19,8 +19,6 @@ var ProductComponent = (function () {
         this.productService = productService;
     }
     ProductComponent.prototype.ngOnInit = function () {
-        // this.Product = this.productService.getProdInfo();
-        // this.addAttrs(this.Product);
     };
     ProductComponent.prototype.addAttrs = function (product) {
         for (var _i = 0, product_1 = product; _i < product_1.length; _i++) {
@@ -31,14 +29,40 @@ var ProductComponent = (function () {
     ProductComponent.prototype.showDetail = function (prod) {
         prod.disabled = !prod.disabled;
     };
+    // response=>this.Product=response
     ProductComponent.prototype.searchProd = function () {
         var _this = this;
-        console.log('search Prod begin ');
-        this.productService.search({ "a": "ab" })
-            .subscribe(function (response) { return _this.Product = response; }, function (error) { return console.log(error); }, function complete() {
+        this.productService.search({ "prodCode": this.keyword })
+            .subscribe(function (response) {
+            _this.Product = response;
+            _this.Product.forEach(function (item) {
+                item.selected = false;
+            });
+        }, function (error) { return console.log(error); }, function complete() {
             console.log('complete');
         });
         console.log('search Prod end');
+    };
+    ProductComponent.prototype.insertProd = function () {
+        this.productService.insert({ "prodCode": this.keyword })
+            .subscribe(function (error) { return console.log(error); }, function complete() {
+            console.log('complete');
+        });
+    };
+    ProductComponent.prototype.updateProd = function () {
+        this.productService.update({ "prodCode": this.keyword })
+            .subscribe(function (error) { return console.log(error); }, function complete() {
+            console.log('complete');
+        });
+    };
+    ProductComponent.prototype.deleteProd = function () {
+        this.productService.delete({ "prodCode": this.keyword })
+            .subscribe(function (error) { return console.log(error); }, function complete() {
+            console.log('complete');
+        });
+    };
+    ProductComponent.prototype.selectProd = function (prod) {
+        prod.selected = !prod.selected;
     };
     return ProductComponent;
 }());

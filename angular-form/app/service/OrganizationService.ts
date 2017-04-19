@@ -23,13 +23,13 @@ export class OrganizationService{
     search(keyword):Observable<Organization[]>{
         keyword ={"org_code":keyword,"IS_LEGAL_PERSON":"Y"};
         let url ="http://localhost:8085/FarmProject/services/restfulService/organization/search";
-        return this.dataAccessService.post(url,keyword,this.options);
+        return this.dataAccessService.post(url,keyword);
     }
 
     insert(body){
         body ={"org_code":"G12345","IS_LEGAL_PERSON":"Y"};
         let url ="http://localhost:8085/FarmProject/services/restfulService/organization/insert";
-        return this.dataAccessService.post(url,body,this.options);
+        return this.dataAccessService.post(url,body);
     }
 
     update(body){

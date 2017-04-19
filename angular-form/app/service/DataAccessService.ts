@@ -14,11 +14,14 @@ import {Employee} from "../views/employee/Employee";
 @Injectable()
 export class DataAccessService {
 
+    private headers = new Headers({'Content-Type': 'application/json'});
+    private options = new RequestOptions({headers: this.headers});
+
     constructor(private http: Http) {
     }
 
-    post(url,body,options){
-        return this.http.post(url, body, options)
+    post(url,body){
+        return this.http.post(url, body,this.options)
             .map(this.extractData)
             .catch(this.handleError);
     }

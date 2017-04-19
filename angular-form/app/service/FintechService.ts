@@ -20,7 +20,7 @@ export class FintechService{
         let url = "http://localhost:8085/FarmProject/services/restfulService/fintech/getData";
         let queryString = [{"data":"aaa"}];
         let options = new RequestOptions({headers: headers});
-        return this.dataAccessService.post(url,queryString,options);
+        return this.dataAccessService.post(url,queryString);
 
 
     }

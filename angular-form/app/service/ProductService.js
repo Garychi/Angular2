@@ -14,17 +14,53 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 var core_1 = require("@angular/core");
 var DataAccessService_1 = require("./DataAccessService");
-var http_1 = require("@angular/http");
 var ProductService = (function () {
     function ProductService(dataAccessService) {
         this.dataAccessService = dataAccessService;
-        this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
-        this.options = new http_1.RequestOptions({ headers: this.headers });
     }
     ProductService.prototype.search = function (keyword) {
-        keyword = { "empno": "7839", "ename": "KING" };
+        var body = { "id": keyword };
         var url = "http://localhost:8085/FarmProject/services/restfulService/product/search";
-        return this.dataAccessService.post(url, keyword, this.options);
+        return this.dataAccessService.post(url, body);
+    };
+    ProductService.prototype.insert = function (keyword) {
+        var body = {
+            "id": {
+                "prodCode": keyword.prodCode,
+                "compCode": "G001"
+            },
+            "description": "AI_Brain",
+            "isOnshelf": "Y",
+            "salesPrice": "300",
+            "status": "Y",
+            // "createdate":"",
+            "creator": "user01",
+            // "modiby": "",
+            // "modidate": "",
+            "flag": 1,
+        };
+        var url = "http://localhost:8085/FarmProject/services/restfulService/product/insert";
+        return this.dataAccessService.post(url, body);
+    };
+    ProductService.prototype.update = function (keyword) {
+        var body = {
+            "id": {
+                "prodCode": keyword.prodCode,
+                "compCode": "G001"
+            }
+        };
+        var url = "http://localhost:8085/FarmProject/services/restfulService/product/update";
+        return this.dataAccessService.post(url, body);
+    };
+    ProductService.prototype.delete = function (keyword) {
+        var body = {
+            "id": {
+                "prodCode": keyword.prodCode,
+                "compCode": "G001"
+            }
+        };
+        var url = "http://localhost:8085/FarmProject/services/restfulService/product/delete";
+        return this.dataAccessService.post(url, body);
     };
     ProductService.prototype.getProdInfo = function () {
         var products = [

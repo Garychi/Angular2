@@ -10,35 +10,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
- * Created by Mos on 2016/12/11.
+ * Created by Mos on 2017/4/19.
  */
 var core_1 = require("@angular/core");
 var DataAccessService_1 = require("./DataAccessService");
-var http_1 = require("@angular/http");
-var EmployeeService = (function () {
-    function EmployeeService(dataAccessService) {
+var LoginService = (function () {
+    function LoginService(dataAccessService) {
         this.dataAccessService = dataAccessService;
-        this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
-        this.options = new http_1.RequestOptions({ headers: this.headers });
     }
-    EmployeeService.prototype.search = function (keyword) {
-        keyword = { "empno": "7839", "ename": "KING" };
-        var url = "http://localhost:8085/FarmProject/services/restfulService/employee/search";
-        return this.dataAccessService.post(url, keyword);
-    };
-    EmployeeService.prototype.addEmp = function (body) {
-        var url = "http://localhost:8085/FarmProject/services/restfulService/employee/insert";
+    LoginService.prototype.login = function (username, password) {
+        var body = {
+            username: username,
+            password: password
+        };
+        var url = "http://localhost:8085/FarmProject/services/restfulService/login/check";
         return this.dataAccessService.post(url, body);
     };
-    EmployeeService.prototype.update = function () {
-    };
-    EmployeeService.prototype.delete = function () {
-    };
-    return EmployeeService;
+    return LoginService;
 }());
-EmployeeService = __decorate([
+LoginService = __decorate([
     core_1.Injectable(),
     __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
-], EmployeeService);
-exports.EmployeeService = EmployeeService;
-//# sourceMappingURL=EmployeeService.js.map
+], LoginService);
+exports.LoginService = LoginService;
+//# sourceMappingURL=LoginService.js.map

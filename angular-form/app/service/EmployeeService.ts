@@ -22,12 +22,12 @@ export class EmployeeService {
         keyword = {"empno": "7839","ename":"KING"};
 
         let url = "http://localhost:8085/FarmProject/services/restfulService/employee/search";
-        return this.dataAccessService.post(url, keyword, this.options);
+        return this.dataAccessService.post(url, keyword);
     }
 
     addEmp(body){
         let url = "http://localhost:8085/FarmProject/services/restfulService/employee/insert";
-        return this.dataAccessService.post(url, body, this.options);
+        return this.dataAccessService.post(url, body);
     }
 
     update() {

@@ -20,9 +20,11 @@ var mock_boxes_1 = require("../mock-boxes");
 var DataAccessService = (function () {
     function DataAccessService(http) {
         this.http = http;
+        this.headers = new http_2.Headers({ 'Content-Type': 'application/json' });
+        this.options = new http_2.RequestOptions({ headers: this.headers });
     }
-    DataAccessService.prototype.post = function (url, body, options) {
-        return this.http.post(url, body, options)
+    DataAccessService.prototype.post = function (url, body) {
+        return this.http.post(url, body, this.options)
             .map(this.extractData)
             .catch(this.handleError);
     };

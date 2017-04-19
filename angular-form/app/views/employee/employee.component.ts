@@ -15,7 +15,7 @@ import {Employee} from './Employee';
 export class EmployeeComponent {
 
     Employees: Employee[];
-    keyword:string;
+    keyword: string;
 
     constructor(private employeeService: EmployeeService) {
 
@@ -33,11 +33,11 @@ export class EmployeeComponent {
 
     private addEmp() {
         var body =
-                {
-                    "empno": "001", "ename": "Jack", "job": "CEO",
-                    "mgr": "10", "hiredate": "2016-12-11", "sal": "10",
-                    "comm": "100", "depno": "20"
-                };
+            {
+                "empno": "001", "ename": "Jack", "job": "CEO",
+                "mgr": "10", "hiredate": "2016-12-11", "sal": "10",
+                "comm": "100", "depno": "20"
+            };
 
         this.employeeService.addEmp(body)
             .subscribe(response => console.log(response),

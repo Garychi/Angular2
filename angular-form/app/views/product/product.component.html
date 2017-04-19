@@ -1,8 +1,12 @@
 <div class="prodduct">
     <div class="prodSearchDiv">
         <label>{{'Product.search_prod' | translate}}</label>
-        <input type="text">
+        <input type="text" placeholder="關鍵字" [(ngModel)]="keyword">
         <button (click)="searchProd()">搜尋</button>
+        <button (click)="insertProd()">新增</button>
+        <button (click)="updateProd()">更新</button>
+        <button (click)="deleteProd()">刪除</button>
+        <input type="text" [(ngModel)]="salesPrice">
         <!--<myDialog></myDialog>-->
     </div>
 
@@ -15,22 +19,14 @@
             <div class="list-header-row">{{'Product.remark' | translate}}</div>
         </div>
         <div class="list-content" *ngFor="let prod of Product">
-            <div class="list-content-row">{{prod.id.prodCode}}</div>
+            <div class="list-content-row">
+                <input type="checkbox" [(ngModel)]="prod.selected" (change)="selectProd(prod)">
+                <label>{{prod.id.prodCode}}</label>
+            </div>
             <div class="list-content-row">{{prod.id.compCode}}</div>
             <div class="list-content-row">{{prod.salesPrice}}</div>
             <div class="list-content-row">{{prod.status}}</div>
             <div class="list-content-row">{{prod.description}}</div>
         </div>
     </div>
-    <!--<div class="prodContent">-->
-    <!--<div *ngFor="let prod of Product">-->
-    <!--<img [src]="prod.pic" (click)="showDetail(prod)">-->
-    <!--<div *ngIf="prod.disabled">-->
-    <!--<p>名稱:<label>{{prod.name}}</label></p>-->
-    <!--<p>產地:<label>{{prod.origin}}</label></p>-->
-    <!--<p>方式<label>{{prod.planway}}</label></p>-->
-    <!--<p><a>查看詳情</a></p>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
 </div>

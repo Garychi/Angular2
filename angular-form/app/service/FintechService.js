@@ -24,7 +24,7 @@ var FintechService = (function () {
         var url = "http://localhost:8085/FarmProject/services/restfulService/fintech/getData";
         var queryString = [{ "data": "aaa" }];
         var options = new http_1.RequestOptions({ headers: headers });
-        return this.dataAccessService.post(url, queryString, options);
+        return this.dataAccessService.post(url, queryString);
     };
     return FintechService;
 }());

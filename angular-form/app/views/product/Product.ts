@@ -16,4 +16,5 @@ export interface Product{
     status:string;
     prodCode:string;
     compCode:string;
+    selected:boolean;
 }
