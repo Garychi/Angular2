@@ -14,14 +14,29 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 var core_1 = require("@angular/core");
 var LoginService_1 = require("../../service/LoginService");
+var router_1 = require("@angular/router");
 var LoginComponent = (function () {
-    function LoginComponent(loginService) {
+    function LoginComponent(loginService, router) {
         this.loginService = loginService;
+        this.router = router;
     }
     LoginComponent.prototype.ngOnInit = function () {
+        console.log('Login init');
     };
     LoginComponent.prototype.doLogin = function () {
-        this.loginService.login(this.username, this.password);
+        var _this = this;
+        this.loginService.login(this.username, this.password)
+            .subscribe(function (response) {
+            _this.something = response;
+            console.log(response);
+        }, function (error) { return console.log(error); }, function complete() {
+            console.log('complete');
+        });
+        var navigationExtras = {
+            preserveQueryParams: true,
+            preserveFragment: true
+        };
+        this.router.navigate(['/fintech'], navigationExtras);
     };
     return LoginComponent;
 }());
@@ -32,7 +47,7 @@ LoginComponent = __decorate([
         templateUrl: 'login.component.html',
         styleUrls: ['login.component.css']
     }),
-    __metadata("design:paramtypes", [LoginService_1.LoginService])
+    __metadata("design:paramtypes", [LoginService_1.LoginService, router_1.Router])
 ], LoginComponent);
 exports.LoginComponent = LoginComponent;
 //# sourceMappingURL=login.component.js.map

@@ -3,6 +3,7 @@
  */
 import {Component, OnInit} from '@angular/core';
 import {LoginService} from '../../service/LoginService';
+import {Router, NavigationExtras} from '@angular/router';
 
 @Component({
     moduleId: module.id,
@@ -12,21 +13,38 @@ import {LoginService} from '../../service/LoginService';
 })
 
 
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
 
-    username:string;
-    password:string;
+    username: string;
+    password: string;
+    isLogin:boolean;
+    something:object;
 
-    constructor(private loginService :LoginService){
+    constructor(private loginService: LoginService, private router: Router) {
 
     }
 
     ngOnInit(): void {
-
+        console.log('Login init');
     }
 
 
-    doLogin(){
-        this.loginService.login(this.username,this.password);
+    doLogin() {
+        this.loginService.login(this.username, this.password)
+            .subscribe(response=>{
+                this.something=response;
+                console.log(response);
+            },
+            error => console.log(error),
+            function complete(){
+                console.log('complete');
+            });
+
+        let navigationExtras: NavigationExtras = {
+            preserveQueryParams: true,
+            preserveFragment: true
+        };
+
+        this.router.navigate(['/fintech'], navigationExtras);
     }
 }

@@ -23,6 +23,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {i18nService} from '../service/i18nService';
 
 import {AppComponent}   from './app.component';
+import {LoginModule} from "../views/login/login.module";
 
 @NgModule({
     imports: [
@@ -37,6 +38,7 @@ import {AppComponent}   from './app.component';
         JsonpModule,
         AppRoutingModule,
         TranslateModule.forRoot(),
+        LoginModule
         // MdDialogModule.forRoot()
         // MaterialModule.forRoot()
     ],

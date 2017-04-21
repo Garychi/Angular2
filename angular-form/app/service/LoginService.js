@@ -20,10 +20,10 @@ var LoginService = (function () {
     }
     LoginService.prototype.login = function (username, password) {
         var body = {
-            username: username,
+            userId: username,
             password: password
         };
-        var url = "http://localhost:8085/FarmProject/services/restfulService/login/check";
+        var url = "http://localhost:8085/FarmProject/services/restfulService/login/checkIdentity";
         return this.dataAccessService.post(url, body);
     };
     return LoginService;

@@ -26,6 +26,7 @@ var modal_module_1 = require("../views/commons/openWindow/modal.module");
 var app_routing_module_1 = require("./app-routing.module");
 var i18nService_1 = require("../service/i18nService");
 var app_component_1 = require("./app.component");
+var login_module_1 = require("../views/login/login.module");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -45,6 +46,9 @@ AppModule = __decorate([
             http_1.JsonpModule,
             app_routing_module_1.AppRoutingModule,
             ng2_translate_1.TranslateModule.forRoot(),
+            login_module_1.LoginModule
+            // MdDialogModule.forRoot()
+            // MaterialModule.forRoot()
         ],
         declarations: [
             app_component_1.AppComponent

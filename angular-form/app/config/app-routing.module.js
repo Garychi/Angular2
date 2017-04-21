@@ -18,15 +18,17 @@ var organization_component_1 = require("../views/organization/organization.compo
 var MyDynamicFormComponent_1 = require("../views/commons/dynamic/MyDynamicFormComponent");
 var product_component_1 = require("../views/product/product.component");
 var setting_component_1 = require("./setting.component");
+var login_component_1 = require("../views/login/login.component");
 var routes = [
-    { path: '', redirectTo: '/fintech', pathMatch: 'full' },
+    { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'fintech', component: fintech_component_1.FinTechComponent },
     { path: 'stocks', component: stocks_component_1.StocksComponent },
     { path: 'employee', component: employee_component_1.EmployeeComponent },
     { path: 'organization', component: organization_component_1.OrganizationComponent },
     { path: 'test', component: MyDynamicFormComponent_1.MyDynamicFormComponent },
     { path: 'product', component: product_component_1.ProductComponent },
-    { path: 'setting', component: setting_component_1.SettingComponent }
+    { path: 'setting', component: setting_component_1.SettingComponent },
+    { path: 'login', component: login_component_1.LoginComponent }
     // { path: 'detail/:id', component: HeroDetailComponent },
     // { path: 'game',     component: HeroesComponent }
 ];

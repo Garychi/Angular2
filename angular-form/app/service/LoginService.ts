@@ -4,7 +4,6 @@
 import {Injectable} from "@angular/core";
 import {Observable}     from 'rxjs/Observable';
 import {DataAccessService} from "./DataAccessService";
-import {Headers, RequestOptions} from '@angular/http';
 
 @Injectable()
 export class LoginService{
@@ -16,11 +15,13 @@ export class LoginService{
 
     login(username,password){
         var body={
-            username:username,
+            userId:username,
             password:password
         }
 
-        let url = "http://localhost:8085/FarmProject/services/restfulService/login/check";
+        let url = "http://localhost:8085/FarmProject/services/restfulService/login/checkIdentity";
         return this.dataAccessService.post(url, body);
     }
+
+
 }

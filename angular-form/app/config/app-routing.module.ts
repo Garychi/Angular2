@@ -11,17 +11,19 @@ import {OrganizationComponent}  from '../views/organization/organization.compone
 import {MyDynamicFormComponent} from '../views/commons/dynamic/MyDynamicFormComponent';
 import {ProductComponent} from '../views/product/product.component';
 import {SettingComponent} from './setting.component';
+import {LoginComponent} from '../views/login/login.component';
 
 
 const routes: Routes = [
-    { path: '', redirectTo: '/fintech', pathMatch: 'full' },
+    { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'fintech',  component: FinTechComponent },
     { path: 'stocks',  component: StocksComponent },
     { path: 'employee',  component: EmployeeComponent },
     { path: 'organization',  component: OrganizationComponent },
     { path: 'test',  component: MyDynamicFormComponent },
     { path: 'product',  component: ProductComponent },
-    { path: 'setting',  component: SettingComponent }
+    { path: 'setting',  component: SettingComponent },
+    { path: 'login',  component: LoginComponent }
     // { path: 'detail/:id', component: HeroDetailComponent },
     // { path: 'game',     component: HeroesComponent }
 ];
