@@ -6,8 +6,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {Ng2BootstrapModule} from 'ng2-bootstrap/ng2-bootstrap';
 import {HttpModule, JsonpModule} from '@angular/http';
 import {TranslateModule} from 'ng2-translate';
-// import {MaterialModule} from '@angular/material';
-// import {MdDialogModule} from '@angular/material';
 
 import '../rxjs-operators';
 
@@ -15,12 +13,13 @@ import '../rxjs-operators';
 import {MainContentModule} from '../views/base/main-content.module';
 import {SideContentModule} from '../views/base/side-content.module';
 import {MenuBarModule} from '../views/base/menu-bar.module';
-import {AlertComponentModule} from '../views/commons/alert/alert.module';
-import {ModalComponentModule} from '../views/commons/openWindow/modal.module';
+// import {AlertComponentModule} from '../views/commons/alert/alert.module';
+// import {ModalComponentModule} from '../views/commons/openWindow/modal.module';
 
 import {AppRoutingModule} from './app-routing.module';
 
 import {i18nService} from '../service/i18nService';
+import {LoginService} from '../service/LoginService';
 
 import {AppComponent}   from './app.component';
 import {LoginModule} from "../views/login/login.module";
@@ -32,21 +31,19 @@ import {LoginModule} from "../views/login/login.module";
         MainContentModule,
         SideContentModule,
         MenuBarModule,
-        AlertComponentModule,
-        ModalComponentModule,
+        // AlertComponentModule,
+        // ModalComponentModule,
         HttpModule,
         JsonpModule,
         AppRoutingModule,
         TranslateModule.forRoot(),
         LoginModule
-        // MdDialogModule.forRoot()
-        // MaterialModule.forRoot()
     ],
     declarations: [
         AppComponent
     ],
     bootstrap: [AppComponent],
-    providers: [i18nService]
+    providers: [i18nService,LoginService]
 })
 export class AppModule {}
 

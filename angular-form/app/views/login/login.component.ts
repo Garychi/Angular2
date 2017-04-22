@@ -30,15 +30,8 @@ export class LoginComponent implements OnInit {
 
 
     doLogin() {
-        this.loginService.login(this.username, this.password)
-            .subscribe(response=>{
-                this.something=response;
-                console.log(response);
-            },
-            error => console.log(error),
-            function complete(){
-                console.log('complete');
-            });
+        this.loginService.login(this.username, this.password);
+
 
         let navigationExtras: NavigationExtras = {
             preserveQueryParams: true,

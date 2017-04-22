@@ -14,9 +14,6 @@ var platform_browser_1 = require("@angular/platform-browser");
 var primeng_1 = require("primeng/primeng");
 var ng2_translate_1 = require("ng2-translate");
 var forms_1 = require("@angular/forms");
-// import {MdDialogModule} from '@angular/material';
-// import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-// import {DialogModule} from '../dialog/dialog.module';
 var product_component_1 = require("./product.component");
 var ProductService_1 = require("../../service/ProductService");
 var i18nService_1 = require("../../service/i18nService");
@@ -31,9 +28,6 @@ ProductModule = __decorate([
             platform_browser_1.BrowserModule,
             ng2_translate_1.TranslateModule,
             forms_1.FormsModule,
-            // MdDialogModule,
-            // BrowserAnimationsModule,
-            // DialogModule,
             primeng_1.DataGridModule
         ],
         declarations: [

@@ -4,6 +4,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Product} from "./Product";
 import {ProductService} from "../../service/ProductService";
+import {i18nService} from "../../service/i18nService";
 
 @Component({
     moduleId: module.id,

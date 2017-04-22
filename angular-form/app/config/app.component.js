@@ -19,6 +19,7 @@ var AppComponent = (function () {
         this.i18nService = i18nService;
     }
     AppComponent.prototype.ngOnInit = function () {
+        console.log('app_component init complete');
     };
     return AppComponent;
 }());

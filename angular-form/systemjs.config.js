@@ -11,7 +11,7 @@
         // map tells the System loader where to look for things
         map: {
             // our app is within the app folder
-            'ng2-bootstrap/ng2-bootstrap': 'node_modules/ng2-bootstrap/bundles/ng2-bootstrap.umd.js',
+            'ng2-bootstrap/ng2-bootstrap': 'node_modules/ng2-bootstrap/bundles/ngx-bootstrap.umd.js',
             'moment': 'node_modules/moment/moment.js',
 
 

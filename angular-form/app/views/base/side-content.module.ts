@@ -5,14 +5,14 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MenuModule} from '../../modules/menu/menu.module';
 
-import {DropDownComponentModule} from '../../views/commons/dropdown/dropDown.module';
+// import {DropDownComponentModule} from '../../views/commons/dropdown/dropDown.module';
 
 import {SideContentComponent} from './side-content.component';
 
 @NgModule({
     imports: [
         BrowserModule,
-        DropDownComponentModule,
+        // DropDownComponentModule,
         MenuModule
     ],
     declarations: [

@@ -18,10 +18,17 @@ export class DataAccessService {
     private options = new RequestOptions({headers: this.headers});
 
     constructor(private http: Http) {
+
     }
 
-    post(url,body){
-        return this.http.post(url, body,this.options)
+    post(url,body,options?){
+        options = options || this.options;
+
+        if(localStorage.getItem('currentUser') !=null){
+            options.headers.set('Authorization',JSON.parse(localStorage.getItem('currentUser')).token);
+        }
+
+        return this.http.post(url, body,options)
             .map(this.extractData)
             .catch(this.handleError);
     }
@@ -33,9 +40,6 @@ export class DataAccessService {
 
     private handleError(error: Response | any) {
         // In a real world app, we might use a remote logging infrastructure
-
-        console.log('in to this handleError');
-
         let errMsg: string;
         if (error instanceof Response) {
             const body = error.json() || '';
@@ -52,20 +56,10 @@ export class DataAccessService {
         return BOXES;
     }
 
-    getMockData(url, queryString): Observable<Object> {
-        let headers = new Headers({'Content-Type': 'application/json'});
-        // let token="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJwcm9maWxlXCI6XCJ7XFxcInByaW1lcktleVxcXCI6XFxcIjcxYzE1ODg1LWM2MDYtNGVjZi05ZWM3LWJlOWVjNmNlZGEyZlxcXCIsXFxcImtleVxcXCI6XFxcIjFcXFwiLFxcXCJpbmZvM1xcXCI6XFxcImluZm9ybWF0aW9uIDNcXFwiLFxcXCJpbmZvMlxcXCI6XFxcImluZm9ybWF0aW9uIDJcXFwifVwiLFwiaXNzdWVkQXRcIjoxNDc5Njk5MTc1NzA3LFwibG9naW5Qb2xpY3lcIjpcIkFMTE9XX01VTFRJUExFX0xPR0lOXCJ9IiwiZXhwIjoxNDc5Nzg1NTc1LCJpYXQiOjE0Nzk2OTkxNzUsImp0aSI6IjcxYzE1ODg1LWM2MDYtNGVjZi05ZWM3LWJlOWVjNmNlZGEyZiJ9.9pXcU3hHHjOlVeSvKKNDT8LRO_hcojrgCFs01aqEbrxDqyypA01do3qBLCeOXK8_gWdzxHIkKlv6xdqU-sjXZA";
-        // headers.append("Token",token);
-
-        let options = new RequestOptions({headers: headers});
-        return this.http.post(url, queryString, options)
-            .map(this.extractData)
-            .catch(this.handleError);
-    }
 
     getMenuInfo() {
         var data = [
-            {"menuId": "0001", "menuName": "Home", "parent": "root", "path": "/fintech"},
+            {"menuId": "0001", "menuName": "Home", "parent": "root", "path": "/login"},
             {"menuId": "0002", "menuName": "Employee", "parent": "root", "path": "/employee"},
             {"menuId": "0003", "menuName": "Stocks", "parent": "root", "path": "/stocks"},
             {"menuId": "0004", "menuName": "Fintech", "parent": "root", "path": "/fintech"},

@@ -8,7 +8,7 @@ import {FinTechComponent} from '../views/fintech/fintech.component';
 import {StocksComponent} from '../views/stocks/stocks.component';
 import {EmployeeComponent} from '../views/employee/employee.component';
 import {OrganizationComponent}  from '../views/organization/organization.component';
-import {MyDynamicFormComponent} from '../views/commons/dynamic/MyDynamicFormComponent';
+// import {MyDynamicFormComponent} from '../views/commons/dynamic/MyDynamicFormComponent';
 import {ProductComponent} from '../views/product/product.component';
 import {SettingComponent} from './setting.component';
 import {LoginComponent} from '../views/login/login.component';
@@ -20,7 +20,7 @@ const routes: Routes = [
     { path: 'stocks',  component: StocksComponent },
     { path: 'employee',  component: EmployeeComponent },
     { path: 'organization',  component: OrganizationComponent },
-    { path: 'test',  component: MyDynamicFormComponent },
+    // { path: 'test',  component: MyDynamicFormComponent },
     { path: 'product',  component: ProductComponent },
     { path: 'setting',  component: SettingComponent },
     { path: 'login',  component: LoginComponent }

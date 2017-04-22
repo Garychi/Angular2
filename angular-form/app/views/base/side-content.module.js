@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var menu_module_1 = require("../../modules/menu/menu.module");
-var dropDown_module_1 = require("../../views/commons/dropdown/dropDown.module");
+// import {DropDownComponentModule} from '../../views/commons/dropdown/dropDown.module';
 var side_content_component_1 = require("./side-content.component");
 var SideContentModule = (function () {
     function SideContentModule() {
@@ -23,7 +23,7 @@ SideContentModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
-            dropDown_module_1.DropDownComponentModule,
+            // DropDownComponentModule,
             menu_module_1.MenuModule
         ],
         declarations: [

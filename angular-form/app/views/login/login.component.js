@@ -24,14 +24,7 @@ var LoginComponent = (function () {
         console.log('Login init');
     };
     LoginComponent.prototype.doLogin = function () {
-        var _this = this;
-        this.loginService.login(this.username, this.password)
-            .subscribe(function (response) {
-            _this.something = response;
-            console.log(response);
-        }, function (error) { return console.log(error); }, function complete() {
-            console.log('complete');
-        });
+        this.loginService.login(this.username, this.password);
         var navigationExtras = {
             preserveQueryParams: true,
             preserveFragment: true

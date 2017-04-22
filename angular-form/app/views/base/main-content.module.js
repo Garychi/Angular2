@@ -18,7 +18,7 @@ var fintech_module_1 = require("../fintech/fintech.module");
 var stocks_module_1 = require("../stocks/stocks.module");
 var employee_module_1 = require("../employee/employee.module");
 var organization_module_1 = require("../organization/organization.module");
-var myDynamic_module_1 = require("../commons/dynamic/myDynamic.module");
+// import {MyDynamicModule} from '../commons/dynamic/myDynamic.module';
 var product_module_1 = require("../product/product.module");
 var setting_module_1 = require("../../config/setting.module");
 var ng2_bootstrap_1 = require("ng2-bootstrap/ng2-bootstrap");
@@ -45,7 +45,7 @@ MainContentModule = __decorate([
             stocks_module_1.StocksModule,
             employee_module_1.EmployeeModule,
             organization_module_1.OrganizationModule,
-            myDynamic_module_1.MyDynamicModule,
+            // MyDynamicModule,
             product_module_1.ProductModule,
             router_1.RouterModule,
             setting_module_1.SettingModule

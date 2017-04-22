@@ -10,29 +10,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
- * Created by Mos on 2016/10/12.
+ * Created by Mos on 2017/4/21.
  */
 var core_1 = require("@angular/core");
-var DataAccessService_1 = require("../../service/DataAccessService");
-require("../../rxjs-operators");
-var MainContentComponent = (function () {
-    function MainContentComponent(dataAccessService) {
+var DataAccessService_1 = require("./DataAccessService");
+var http_1 = require("@angular/http");
+var InitService = (function () {
+    function InitService(dataAccessService) {
         this.dataAccessService = dataAccessService;
-        this.title = "This is Main Content";
+        this.headers = new http_1.Headers({ 'Content-Type': 'application/json', 'Authorization': 'aaasssss' });
+        this.options = new http_1.RequestOptions({ headers: this.headers });
     }
-    MainContentComponent.prototype.ngOnInit = function () {
-        // this.boxes=this.dataAccessService.getMockBoxData();
+    InitService.prototype.getMenu = function () {
+        var body = { "id": "keyword" };
+        var url = "http://localhost:8085/FarmProject/services/restfulService/product/search";
+        return this.dataAccessService.post(url, body, this.options);
     };
-    return MainContentComponent;
+    return InitService;
 }());
-MainContentComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'main-content',
-        templateUrl: 'main-content.component.html'
-        // , styleUrls:['main-content.component.css']
-    }),
+InitService = __decorate([
+    core_1.Injectable(),
     __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
-], MainContentComponent);
-exports.MainContentComponent = MainContentComponent;
-//# sourceMappingURL=main-content.component.js.map
+], InitService);
+exports.InitService = InitService;
+//# sourceMappingURL=InitService.js.map

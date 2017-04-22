@@ -27,19 +27,7 @@ export class MainContentComponent implements OnInit {
     }
 
 
-    getAngularInfo(): void {
-       let url="";
-        let queryString = {};
-        // queryString["serviceId"] = "StockOutGet";
-        this.dataAccessService.getMockData(url, queryString)
-            .subscribe(error => this.errorMessage = <any>error,
-                valueObject => this.valueObject);
-
-        console.log(this.valueObject);
-        console.log('done');
-    }
-
     ngOnInit(): void {
-        this.boxes=this.dataAccessService.getMockBoxData();
+        // this.boxes=this.dataAccessService.getMockBoxData();
     }
 }

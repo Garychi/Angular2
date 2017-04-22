@@ -6,7 +6,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {ModalComponentModule} from '../commons/openWindow/modal.module';
 import {DatepickerComponentModule} from '../commons/datePicker/datepicker.module';
 
-import {MyDynamicModule} from '../commons/dynamic/myDynamic.module';
+// import {MyDynamicModule} from '../commons/dynamic/myDynamic.module';
 import {TranslateModule} from 'ng2-translate';
 
 import {FinTechComponent} from './fintech.component';
@@ -19,7 +19,7 @@ import {i18nService} from "../../service/i18nService";
         BrowserModule,
         ModalComponentModule,
         DatepickerComponentModule,
-        MyDynamicModule,
+        // MyDynamicModule,
         TranslateModule
     ],
     declarations :[

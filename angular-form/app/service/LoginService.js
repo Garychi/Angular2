@@ -19,12 +19,26 @@ var LoginService = (function () {
         this.dataAccessService = dataAccessService;
     }
     LoginService.prototype.login = function (username, password) {
+        var _this = this;
         var body = {
-            userId: username,
+            userName: username,
             password: password
         };
         var url = "http://localhost:8085/FarmProject/services/restfulService/login/checkIdentity";
-        return this.dataAccessService.post(url, body);
+        this.dataAccessService.post(url, body).subscribe(function (response) {
+            var token = response;
+            if (token) {
+                _this.token = token;
+                localStorage.setItem('currentUser', JSON.stringify({ username: username, token: token }));
+            }
+        }, function (error) { return console.log(error); }, function complete() {
+            console.log('token complete');
+        });
+    };
+    LoginService.prototype.logout = function () {
+        // clear token remove user from local storage to log user out
+        this.token = null;
+        localStorage.removeItem('currentUser');
     };
     return LoginService;
 }());

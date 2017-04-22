@@ -11,7 +11,7 @@ import {FintechModule} from '../fintech/fintech.module';
 import {StocksModule} from '../stocks/stocks.module';
 import {EmployeeModule} from "../employee/employee.module";
 import {OrganizationModule} from '../organization/organization.module';
-import {MyDynamicModule} from '../commons/dynamic/myDynamic.module';
+// import {MyDynamicModule} from '../commons/dynamic/myDynamic.module';
 import {ProductModule} from '../product/product.module';
 import {SettingModule} from '../../config/setting.module';
 
@@ -39,7 +39,7 @@ import { NgGrid, NgGridItem } from 'angular2-grid';
         StocksModule,
         EmployeeModule,
         OrganizationModule,
-        MyDynamicModule,
+        // MyDynamicModule,
         ProductModule,
         RouterModule,
         SettingModule

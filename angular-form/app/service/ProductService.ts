@@ -4,7 +4,6 @@
 import {Injectable} from "@angular/core";
 import {Observable}     from 'rxjs/Observable';
 import {DataAccessService} from "./DataAccessService";
-import {Headers, RequestOptions} from '@angular/http';
 import {Product} from "../views/product/Product";
 
 @Injectable()
@@ -13,7 +12,6 @@ export class ProductService {
     constructor(private dataAccessService: DataAccessService) {
 
     }
-
 
     search(keyword): Observable<Product[]> {
         var body = {"id": keyword};

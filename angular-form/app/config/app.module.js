@@ -14,17 +14,16 @@ var platform_browser_1 = require("@angular/platform-browser");
 var ng2_bootstrap_1 = require("ng2-bootstrap/ng2-bootstrap");
 var http_1 = require("@angular/http");
 var ng2_translate_1 = require("ng2-translate");
-// import {MaterialModule} from '@angular/material';
-// import {MdDialogModule} from '@angular/material';
 require("../rxjs-operators");
 //custom Module
 var main_content_module_1 = require("../views/base/main-content.module");
 var side_content_module_1 = require("../views/base/side-content.module");
 var menu_bar_module_1 = require("../views/base/menu-bar.module");
-var alert_module_1 = require("../views/commons/alert/alert.module");
-var modal_module_1 = require("../views/commons/openWindow/modal.module");
+// import {AlertComponentModule} from '../views/commons/alert/alert.module';
+// import {ModalComponentModule} from '../views/commons/openWindow/modal.module';
 var app_routing_module_1 = require("./app-routing.module");
 var i18nService_1 = require("../service/i18nService");
+var LoginService_1 = require("../service/LoginService");
 var app_component_1 = require("./app.component");
 var login_module_1 = require("../views/login/login.module");
 var AppModule = (function () {
@@ -40,21 +39,19 @@ AppModule = __decorate([
             main_content_module_1.MainContentModule,
             side_content_module_1.SideContentModule,
             menu_bar_module_1.MenuBarModule,
-            alert_module_1.AlertComponentModule,
-            modal_module_1.ModalComponentModule,
+            // AlertComponentModule,
+            // ModalComponentModule,
             http_1.HttpModule,
             http_1.JsonpModule,
             app_routing_module_1.AppRoutingModule,
             ng2_translate_1.TranslateModule.forRoot(),
             login_module_1.LoginModule
-            // MdDialogModule.forRoot()
-            // MaterialModule.forRoot()
         ],
         declarations: [
             app_component_1.AppComponent
         ],
         bootstrap: [app_component_1.AppComponent],
-        providers: [i18nService_1.i18nService]
+        providers: [i18nService_1.i18nService, LoginService_1.LoginService]
     })
 ], AppModule);
 exports.AppModule = AppModule;
