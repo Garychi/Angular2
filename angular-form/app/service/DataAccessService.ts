@@ -64,7 +64,7 @@ export class DataAccessService {
             {"menuId": "0003", "menuName": "Stocks", "parent": "root", "path": "/stocks"},
             {"menuId": "0004", "menuName": "Fintech", "parent": "root", "path": "/fintech"},
             {"menuId": "0005", "menuName": "Organization", "parent": "root", "path": "/organization"},
-            {"menuId": "0006", "menuName": "Test", "parent": "root", "path": "/test"},
+            // {"menuId": "0006", "menuName": "Test", "parent": "root", "path": "/test"},
             {"menuId": "0007", "menuName": "產品", "parent": "root", "path": "/product"},
             {"menuId": "0008", "menuName": "設定", "parent": "root", "path": "/setting"}
         ];

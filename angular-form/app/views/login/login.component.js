@@ -26,7 +26,8 @@ var LoginComponent = (function () {
     LoginComponent.prototype.doLogin = function () {
         this.loginService.login(this.username, this.password);
         var navigationExtras = {
-            preserveQueryParams: true,
+            // preserveQueryParams: true,
+            queryParamsHandling: 'preserve',
             preserveFragment: true
         };
         this.router.navigate(['/fintech'], navigationExtras);

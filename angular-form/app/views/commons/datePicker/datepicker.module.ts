@@ -3,7 +3,7 @@
  */
 import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {DatepickerModule} from 'ng2-bootstrap/ng2-bootstrap';
+import {DatepickerModule} from 'ngx-bootstrap';
 
 import {DatepickerComponent} from './datepicker.component';
 

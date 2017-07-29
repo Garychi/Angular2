@@ -15,7 +15,7 @@ import {OrganizationModule} from '../organization/organization.module';
 import {ProductModule} from '../product/product.module';
 import {SettingModule} from '../../config/setting.module';
 
-import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { TooltipModule } from 'ngx-bootstrap';
 
 //Service
 import {DataAccessService} from '../../service/DataAccessService';

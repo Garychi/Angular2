@@ -4,7 +4,7 @@
 import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
-import {ModalModule} from 'ng2-bootstrap/ng2-bootstrap';
+import {ModalModule} from 'ngx-bootstrap';
 
 import {CalendarModule} from 'primeng/primeng';
 // import {CalendarComponentModule} from '../calendar/calendar.module';

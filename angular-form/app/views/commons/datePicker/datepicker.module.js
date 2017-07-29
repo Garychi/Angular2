@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var ng2_bootstrap_1 = require("ng2-bootstrap/ng2-bootstrap");
+var ngx_bootstrap_1 = require("ngx-bootstrap");
 var datepicker_component_1 = require("./datepicker.component");
 var DatepickerComponentModule = (function () {
     function DatepickerComponentModule() {
@@ -20,7 +20,7 @@ var DatepickerComponentModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                ng2_bootstrap_1.DatepickerModule
+                ngx_bootstrap_1.DatepickerModule
             ],
             declarations: [
                 datepicker_component_1.DatepickerComponent

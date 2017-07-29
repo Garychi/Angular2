@@ -3,7 +3,7 @@
  */
 import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {Ng2BootstrapModule} from 'ng2-bootstrap/ng2-bootstrap';
+import {Ng2BootstrapModule} from 'ngx-bootstrap';
 import {HttpModule, JsonpModule} from '@angular/http';
 import {TranslateModule} from 'ng2-translate';
 

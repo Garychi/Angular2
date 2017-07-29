@@ -3,7 +3,7 @@
  */
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { AlertModule } from 'ngx-bootstrap';
 
 import {AlertComponent} from './alert.component';
 

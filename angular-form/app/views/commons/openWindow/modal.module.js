@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
-var ng2_bootstrap_1 = require("ng2-bootstrap/ng2-bootstrap");
+var ngx_bootstrap_1 = require("ngx-bootstrap");
 var primeng_1 = require("primeng/primeng");
 // import {CalendarComponentModule} from '../calendar/calendar.module';
 var modal_component_1 = require("./modal.component");
@@ -23,7 +23,7 @@ var ModalComponentModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                ng2_bootstrap_1.ModalModule,
+                ngx_bootstrap_1.ModalModule,
                 forms_1.FormsModule,
                 primeng_1.CalendarModule
                 // CalendarComponentModule

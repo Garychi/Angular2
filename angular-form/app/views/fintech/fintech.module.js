@@ -13,6 +13,7 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var modal_module_1 = require("../commons/openWindow/modal.module");
 var datepicker_module_1 = require("../commons/datePicker/datepicker.module");
+var animations_1 = require("@angular/platform-browser/animations");
 // import {MyDynamicModule} from '../commons/dynamic/myDynamic.module';
 var ng2_translate_1 = require("ng2-translate");
 var fintech_component_1 = require("./fintech.component");
@@ -27,6 +28,7 @@ var FintechModule = (function () {
                 platform_browser_1.BrowserModule,
                 modal_module_1.ModalComponentModule,
                 datepicker_module_1.DatepickerComponentModule,
+                animations_1.BrowserAnimationsModule,
                 // MyDynamicModule,
                 ng2_translate_1.TranslateModule
             ],

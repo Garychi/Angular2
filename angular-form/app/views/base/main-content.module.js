@@ -21,7 +21,7 @@ var organization_module_1 = require("../organization/organization.module");
 // import {MyDynamicModule} from '../commons/dynamic/myDynamic.module';
 var product_module_1 = require("../product/product.module");
 var setting_module_1 = require("../../config/setting.module");
-var ng2_bootstrap_1 = require("ng2-bootstrap/ng2-bootstrap");
+var ngx_bootstrap_1 = require("ngx-bootstrap");
 //Service
 var DataAccessService_1 = require("../../service/DataAccessService");
 //Component
@@ -38,7 +38,7 @@ var MainContentModule = (function () {
                 platform_browser_1.BrowserModule,
                 http_1.HttpModule,
                 http_1.JsonpModule,
-                ng2_bootstrap_1.TooltipModule,
+                ngx_bootstrap_1.TooltipModule,
                 fintech_module_1.FintechModule,
                 stocks_module_1.StocksModule,
                 employee_module_1.EmployeeModule,

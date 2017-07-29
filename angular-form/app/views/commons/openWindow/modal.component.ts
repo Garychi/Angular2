@@ -2,7 +2,7 @@
  * Created by Mos on 2016/11/15.
  */
 import { Component ,ViewChild,OnInit} from '@angular/core';
-import { ModalDirective } from 'ng2-bootstrap/ng2-bootstrap';
+import { ModalDirective } from 'ngx-bootstrap';
 // import {CalendarComponent} from "../calendar/calendar.component";
 
 

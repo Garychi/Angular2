@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var ng2_bootstrap_1 = require("ng2-bootstrap/ng2-bootstrap");
+var ngx_bootstrap_1 = require("ngx-bootstrap");
 var alert_component_1 = require("./alert.component");
 var AlertComponentModule = (function () {
     function AlertComponentModule() {
@@ -20,7 +20,7 @@ var AlertComponentModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                ng2_bootstrap_1.AlertModule
+                ngx_bootstrap_1.AlertModule
             ],
             declarations: [
                 alert_component_1.AlertComponent

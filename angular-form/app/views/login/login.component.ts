@@ -34,7 +34,8 @@ export class LoginComponent implements OnInit {
 
 
         let navigationExtras: NavigationExtras = {
-            preserveQueryParams: true,
+            // preserveQueryParams: true,
+            queryParamsHandling:'preserve',
             preserveFragment: true
         };
 
