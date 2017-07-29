@@ -19,25 +19,25 @@ var i18nService_1 = require("../../service/i18nService");
 var LoginModule = (function () {
     function LoginModule() {
     }
+    LoginModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                ng2_translate_1.TranslateModule,
+                forms_1.FormsModule
+            ],
+            declarations: [
+                login_component_1.LoginComponent
+            ],
+            exports: [
+                login_component_1.LoginComponent
+            ],
+            providers: [
+                LoginService_1.LoginService, i18nService_1.i18nService
+            ]
+        })
+    ], LoginModule);
     return LoginModule;
 }());
-LoginModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            ng2_translate_1.TranslateModule,
-            forms_1.FormsModule
-        ],
-        declarations: [
-            login_component_1.LoginComponent
-        ],
-        exports: [
-            login_component_1.LoginComponent
-        ],
-        providers: [
-            LoginService_1.LoginService, i18nService_1.i18nService
-        ]
-    })
-], LoginModule);
 exports.LoginModule = LoginModule;
 //# sourceMappingURL=login.module.js.map

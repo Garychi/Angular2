@@ -19,24 +19,24 @@ var modal_component_1 = require("./modal.component");
 var ModalComponentModule = (function () {
     function ModalComponentModule() {
     }
+    ModalComponentModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                ng2_bootstrap_1.ModalModule,
+                forms_1.FormsModule,
+                primeng_1.CalendarModule
+                // CalendarComponentModule
+            ],
+            declarations: [
+                modal_component_1.ModalComponent
+            ],
+            exports: [
+                modal_component_1.ModalComponent
+            ]
+        })
+    ], ModalComponentModule);
     return ModalComponentModule;
 }());
-ModalComponentModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            ng2_bootstrap_1.ModalModule,
-            forms_1.FormsModule,
-            primeng_1.CalendarModule
-            // CalendarComponentModule
-        ],
-        declarations: [
-            modal_component_1.ModalComponent
-        ],
-        exports: [
-            modal_component_1.ModalComponent
-        ]
-    })
-], ModalComponentModule);
 exports.ModalComponentModule = ModalComponentModule;
 //# sourceMappingURL=modal.module.js.map

@@ -29,16 +29,16 @@ var SettingComponent = (function () {
     };
     SettingComponent.prototype.resetSetting = function () {
     };
+    SettingComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'setting',
+            templateUrl: 'setting.component.html',
+            styleUrls: ['setting.css']
+        }),
+        __metadata("design:paramtypes", [ng2_translate_1.TranslateService, i18nService_1.i18nService])
+    ], SettingComponent);
     return SettingComponent;
 }());
-SettingComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'setting',
-        templateUrl: 'setting.component.html',
-        styleUrls: ['setting.css']
-    }),
-    __metadata("design:paramtypes", [ng2_translate_1.TranslateService, i18nService_1.i18nService])
-], SettingComponent);
 exports.SettingComponent = SettingComponent;
 //# sourceMappingURL=setting.component.js.map

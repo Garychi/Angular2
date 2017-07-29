@@ -16,21 +16,21 @@ var datepicker_component_1 = require("./datepicker.component");
 var DatepickerComponentModule = (function () {
     function DatepickerComponentModule() {
     }
+    DatepickerComponentModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                ng2_bootstrap_1.DatepickerModule
+            ],
+            declarations: [
+                datepicker_component_1.DatepickerComponent
+            ],
+            exports: [
+                datepicker_component_1.DatepickerComponent
+            ]
+        })
+    ], DatepickerComponentModule);
     return DatepickerComponentModule;
 }());
-DatepickerComponentModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            ng2_bootstrap_1.DatepickerModule
-        ],
-        declarations: [
-            datepicker_component_1.DatepickerComponent
-        ],
-        exports: [
-            datepicker_component_1.DatepickerComponent
-        ]
-    })
-], DatepickerComponentModule);
 exports.DatepickerComponentModule = DatepickerComponentModule;
 //# sourceMappingURL=datepicker.module.js.map

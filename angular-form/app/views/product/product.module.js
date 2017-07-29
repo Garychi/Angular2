@@ -20,26 +20,26 @@ var i18nService_1 = require("../../service/i18nService");
 var ProductModule = (function () {
     function ProductModule() {
     }
+    ProductModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                ng2_translate_1.TranslateModule,
+                forms_1.FormsModule,
+                primeng_1.DataGridModule
+            ],
+            declarations: [
+                product_component_1.ProductComponent
+            ],
+            providers: [
+                ProductService_1.ProductService, i18nService_1.i18nService
+            ],
+            exports: [
+                product_component_1.ProductComponent
+            ]
+        })
+    ], ProductModule);
     return ProductModule;
 }());
-ProductModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            ng2_translate_1.TranslateModule,
-            forms_1.FormsModule,
-            primeng_1.DataGridModule
-        ],
-        declarations: [
-            product_component_1.ProductComponent
-        ],
-        providers: [
-            ProductService_1.ProductService, i18nService_1.i18nService
-        ],
-        exports: [
-            product_component_1.ProductComponent
-        ]
-    })
-], ProductModule);
 exports.ProductModule = ProductModule;
 //# sourceMappingURL=product.module.js.map

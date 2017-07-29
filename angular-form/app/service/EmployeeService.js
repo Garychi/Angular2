@@ -34,11 +34,11 @@ var EmployeeService = (function () {
     };
     EmployeeService.prototype.delete = function () {
     };
+    EmployeeService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
+    ], EmployeeService);
     return EmployeeService;
 }());
-EmployeeService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
-], EmployeeService);
 exports.EmployeeService = EmployeeService;
 //# sourceMappingURL=EmployeeService.js.map

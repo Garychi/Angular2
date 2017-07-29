@@ -17,24 +17,24 @@ var EmployeeService_1 = require("../../service/EmployeeService");
 var EmployeeModule = (function () {
     function EmployeeModule() {
     }
+    EmployeeModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                forms_1.FormsModule
+            ],
+            declarations: [
+                employee_component_1.EmployeeComponent
+            ],
+            exports: [
+                employee_component_1.EmployeeComponent
+            ],
+            providers: [
+                EmployeeService_1.EmployeeService
+            ]
+        })
+    ], EmployeeModule);
     return EmployeeModule;
 }());
-EmployeeModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            forms_1.FormsModule
-        ],
-        declarations: [
-            employee_component_1.EmployeeComponent
-        ],
-        exports: [
-            employee_component_1.EmployeeComponent
-        ],
-        providers: [
-            EmployeeService_1.EmployeeService
-        ]
-    })
-], EmployeeModule);
 exports.EmployeeModule = EmployeeModule;
 //# sourceMappingURL=employee.module.js.map

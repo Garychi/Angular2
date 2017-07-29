@@ -2,7 +2,7 @@
  * Created by Mos on 2017/4/14.
  */
 import {Component} from '@angular/core'
-import {MdDialog, MdDialogRef} from '@angular/material';
+// import {MdDialog, MdDialogRef} from '@angular/material';
 
 @Component({
     moduleId: module.id,
@@ -13,13 +13,13 @@ import {MdDialog, MdDialogRef} from '@angular/material';
 export class DialogComponent{
     selectedOption: string;
 
-    constructor(public dialog: MdDialog) {}
+    // constructor(public dialog: MdDialog) {}
 
     openDialog() {
-        let dialogRef = this.dialog.open(DialogResultExampleDialog);
-        dialogRef.afterClosed().subscribe(result => {
-            this.selectedOption = result;
-        });
+        // let dialogRef = this.dialog.open(DialogResultExampleDialog);
+        // dialogRef.afterClosed().subscribe(result => {
+        //     this.selectedOption = result;
+        // });
     }
 }
 
@@ -31,5 +31,5 @@ export class DialogComponent{
 })
 
 export class DialogResultExampleDialog {
-    constructor(public dialogRef: MdDialogRef<DialogResultExampleDialog>) {}
+    // constructor(public dialogRef: MdDialogRef<DialogResultExampleDialog>) {}
 }

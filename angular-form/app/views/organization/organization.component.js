@@ -36,15 +36,15 @@ var OrganizationComponent = (function () {
     };
     OrganizationComponent.prototype.deleteOrg = function () {
     };
+    OrganizationComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'organization',
+            templateUrl: 'organization.component.html'
+        }),
+        __metadata("design:paramtypes", [OrganizationService_1.OrganizationService])
+    ], OrganizationComponent);
     return OrganizationComponent;
 }());
-OrganizationComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'organization',
-        templateUrl: 'organization.component.html'
-    }),
-    __metadata("design:paramtypes", [OrganizationService_1.OrganizationService])
-], OrganizationComponent);
 exports.OrganizationComponent = OrganizationComponent;
 //# sourceMappingURL=organization.component.js.map

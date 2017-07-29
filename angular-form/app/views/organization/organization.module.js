@@ -17,24 +17,24 @@ var OrganizationService_1 = require("../../service/OrganizationService");
 var OrganizationModule = (function () {
     function OrganizationModule() {
     }
+    OrganizationModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                forms_1.FormsModule
+            ],
+            declarations: [
+                organization_component_1.OrganizationComponent
+            ],
+            exports: [
+                organization_component_1.OrganizationComponent
+            ],
+            providers: [
+                OrganizationService_1.OrganizationService
+            ]
+        })
+    ], OrganizationModule);
     return OrganizationModule;
 }());
-OrganizationModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            forms_1.FormsModule
-        ],
-        declarations: [
-            organization_component_1.OrganizationComponent
-        ],
-        exports: [
-            organization_component_1.OrganizationComponent
-        ],
-        providers: [
-            OrganizationService_1.OrganizationService
-        ]
-    })
-], OrganizationModule);
 exports.OrganizationModule = OrganizationModule;
 //# sourceMappingURL=organization.module.js.map

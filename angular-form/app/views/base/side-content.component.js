@@ -13,15 +13,15 @@ var core_1 = require("@angular/core");
 var SideContentComponent = (function () {
     function SideContentComponent() {
     }
+    SideContentComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'side-content',
+            templateUrl: 'side-content.component.html'
+            // ,styleUrls:['side-content.component.css']
+        })
+    ], SideContentComponent);
     return SideContentComponent;
 }());
-SideContentComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'side-content',
-        templateUrl: 'side-content.component.html'
-        // ,styleUrls:['side-content.component.css']
-    })
-], SideContentComponent);
 exports.SideContentComponent = SideContentComponent;
 //# sourceMappingURL=side-content.component.js.map

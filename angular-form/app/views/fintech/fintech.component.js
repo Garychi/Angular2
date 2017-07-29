@@ -39,28 +39,28 @@ var FinTechComponent = (function () {
     FinTechComponent.prototype.animationTest = function () {
         this.menuState = this.menuState === 'flyOut' ? 'flyIn' : 'flyOut';
     };
+    FinTechComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'fintech',
+            templateUrl: 'fintech.component.html',
+            animations: [
+                core_1.trigger('slideInOut', [
+                    core_1.state('flyIn', core_1.style({
+                        transform: 'translate3d(0, 0, 0)'
+                    })),
+                    core_1.state('flyOut', core_1.style({
+                        transform: 'translate3d(100%, 0, 0)'
+                    })),
+                    core_1.transition('flyIn => flyOut', core_1.animate('400ms ease-in-out')),
+                    core_1.transition('flyOut => flyIn', core_1.animate('400ms ease-in-out'))
+                ]),
+            ],
+            styleUrls: ['fintech.component.css']
+        }),
+        __metadata("design:paramtypes", [FintechService_1.FintechService, i18nService_1.i18nService])
+    ], FinTechComponent);
     return FinTechComponent;
 }());
-FinTechComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'fintech',
-        templateUrl: 'fintech.component.html',
-        animations: [
-            core_1.trigger('slideInOut', [
-                core_1.state('flyIn', core_1.style({
-                    transform: 'translate3d(0, 0, 0)'
-                })),
-                core_1.state('flyOut', core_1.style({
-                    transform: 'translate3d(100%, 0, 0)'
-                })),
-                core_1.transition('flyIn => flyOut', core_1.animate('400ms ease-in-out')),
-                core_1.transition('flyOut => flyIn', core_1.animate('400ms ease-in-out'))
-            ]),
-        ],
-        styleUrls: ['fintech.component.css']
-    }),
-    __metadata("design:paramtypes", [FintechService_1.FintechService, i18nService_1.i18nService])
-], FinTechComponent);
 exports.FinTechComponent = FinTechComponent;
 //# sourceMappingURL=fintech.component.js.map

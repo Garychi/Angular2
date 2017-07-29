@@ -21,15 +21,15 @@ var MenuComponent = (function () {
     MenuComponent.prototype.ngOnInit = function () {
         this.menuArray = this.dataAccessService.getMenuInfo();
     };
+    MenuComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'menuBar',
+            templateUrl: 'menu.component.html'
+        }),
+        __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
+    ], MenuComponent);
     return MenuComponent;
 }());
-MenuComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'menuBar',
-        templateUrl: 'menu.component.html'
-    }),
-    __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
-], MenuComponent);
 exports.MenuComponent = MenuComponent;
 //# sourceMappingURL=menu.component.js.map

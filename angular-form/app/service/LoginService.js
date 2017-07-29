@@ -40,11 +40,11 @@ var LoginService = (function () {
         this.token = null;
         localStorage.removeItem('currentUser');
     };
+    LoginService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
+    ], LoginService);
     return LoginService;
 }());
-LoginService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
-], LoginService);
 exports.LoginService = LoginService;
 //# sourceMappingURL=LoginService.js.map

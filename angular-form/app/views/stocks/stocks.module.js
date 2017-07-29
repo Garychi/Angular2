@@ -15,20 +15,20 @@ var stocks_component_1 = require("./stocks.component");
 var StocksModule = (function () {
     function StocksModule() {
     }
+    StocksModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule
+            ],
+            declarations: [
+                stocks_component_1.StocksComponent
+            ],
+            exports: [
+                stocks_component_1.StocksComponent
+            ]
+        })
+    ], StocksModule);
     return StocksModule;
 }());
-StocksModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule
-        ],
-        declarations: [
-            stocks_component_1.StocksComponent
-        ],
-        exports: [
-            stocks_component_1.StocksComponent
-        ]
-    })
-], StocksModule);
 exports.StocksModule = StocksModule;
 //# sourceMappingURL=stocks.module.js.map

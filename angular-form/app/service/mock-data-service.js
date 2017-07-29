@@ -16,10 +16,10 @@ var DataAccessServicsse = (function () {
     DataAccessServicsse.prototype.getMockData = function () {
         return 'this is mock data';
     };
+    DataAccessServicsse = __decorate([
+        core_1.Inject
+    ], DataAccessServicsse);
     return DataAccessServicsse;
 }());
-DataAccessServicsse = __decorate([
-    core_1.Inject
-], DataAccessServicsse);
 exports.DataAccessServicsse = DataAccessServicsse;
 //# sourceMappingURL=mock-data-service.js.map

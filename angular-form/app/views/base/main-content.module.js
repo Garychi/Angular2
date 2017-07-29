@@ -32,35 +32,35 @@ var angular2_grid_1 = require("angular2-grid");
 var MainContentModule = (function () {
     function MainContentModule() {
     }
+    MainContentModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                http_1.HttpModule,
+                http_1.JsonpModule,
+                ng2_bootstrap_1.TooltipModule,
+                fintech_module_1.FintechModule,
+                stocks_module_1.StocksModule,
+                employee_module_1.EmployeeModule,
+                organization_module_1.OrganizationModule,
+                // MyDynamicModule,
+                product_module_1.ProductModule,
+                router_1.RouterModule,
+                setting_module_1.SettingModule
+            ],
+            declarations: [
+                main_content_component_1.MainContentComponent,
+                HighlightDirective_1.HighlightDirective,
+                angular2_grid_1.NgGrid,
+                angular2_grid_1.NgGridItem
+            ],
+            exports: [main_content_component_1.MainContentComponent],
+            providers: [
+                DataAccessService_1.DataAccessService
+            ]
+        })
+    ], MainContentModule);
     return MainContentModule;
 }());
-MainContentModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            http_1.HttpModule,
-            http_1.JsonpModule,
-            ng2_bootstrap_1.TooltipModule,
-            fintech_module_1.FintechModule,
-            stocks_module_1.StocksModule,
-            employee_module_1.EmployeeModule,
-            organization_module_1.OrganizationModule,
-            // MyDynamicModule,
-            product_module_1.ProductModule,
-            router_1.RouterModule,
-            setting_module_1.SettingModule
-        ],
-        declarations: [
-            main_content_component_1.MainContentComponent,
-            HighlightDirective_1.HighlightDirective,
-            angular2_grid_1.NgGrid,
-            angular2_grid_1.NgGridItem
-        ],
-        exports: [main_content_component_1.MainContentComponent],
-        providers: [
-            DataAccessService_1.DataAccessService
-        ]
-    })
-], MainContentModule);
 exports.MainContentModule = MainContentModule;
 //# sourceMappingURL=main-content.module.js.map

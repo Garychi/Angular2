@@ -21,14 +21,14 @@ var AppComponent = (function () {
     AppComponent.prototype.ngOnInit = function () {
         console.log('app_component init complete');
     };
+    AppComponent = __decorate([
+        core_1.Component({
+            selector: 'my-app',
+            template: "\n        <h1>My First Angular App</h1>\n        <div id=\"content\">\n            <div id=\"menu-content\">\n                <menu-bar></menu-bar>\n            </div>\n            \n            <div id=\"side-content\">\n                <side-content></side-content>\n            </div>\n            \n            <div id=\"main-content\">\n                <main-content></main-content>\n            </div>\n        </div>     \n    "
+        }),
+        __metadata("design:paramtypes", [i18nService_1.i18nService])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        template: "\n        <h1>My First Angular App</h1>\n        <div id=\"content\">\n            <div id=\"menu-content\">\n                <menu-bar></menu-bar>\n            </div>\n            \n            <div id=\"side-content\">\n                <side-content></side-content>\n            </div>\n            \n            <div id=\"main-content\">\n                <main-content></main-content>\n            </div>\n        </div>     \n    "
-    }),
-    __metadata("design:paramtypes", [i18nService_1.i18nService])
-], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

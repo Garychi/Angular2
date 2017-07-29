@@ -1,7 +1,7 @@
+"use strict";
 /**
  * Created by Mos on 2016/10/12.
  */
-"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Hero = (function () {
     function Hero() {

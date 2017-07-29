@@ -21,27 +21,27 @@ var i18nService_1 = require("../../service/i18nService");
 var FintechModule = (function () {
     function FintechModule() {
     }
+    FintechModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                modal_module_1.ModalComponentModule,
+                datepicker_module_1.DatepickerComponentModule,
+                // MyDynamicModule,
+                ng2_translate_1.TranslateModule
+            ],
+            declarations: [
+                fintech_component_1.FinTechComponent
+            ],
+            exports: [
+                fintech_component_1.FinTechComponent,
+            ],
+            providers: [
+                FintechService_1.FintechService, i18nService_1.i18nService
+            ]
+        })
+    ], FintechModule);
     return FintechModule;
 }());
-FintechModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            modal_module_1.ModalComponentModule,
-            datepicker_module_1.DatepickerComponentModule,
-            // MyDynamicModule,
-            ng2_translate_1.TranslateModule
-        ],
-        declarations: [
-            fintech_component_1.FinTechComponent
-        ],
-        exports: [
-            fintech_component_1.FinTechComponent,
-        ],
-        providers: [
-            FintechService_1.FintechService, i18nService_1.i18nService
-        ]
-    })
-], FintechModule);
 exports.FintechModule = FintechModule;
 //# sourceMappingURL=fintech.module.js.map

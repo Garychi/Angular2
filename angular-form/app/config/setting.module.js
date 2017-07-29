@@ -16,18 +16,18 @@ var ng2_translate_1 = require("ng2-translate");
 var SettingModule = (function () {
     function SettingModule() {
     }
+    SettingModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                ng2_translate_1.TranslateModule
+            ],
+            declarations: [
+                setting_component_1.SettingComponent
+            ]
+        })
+    ], SettingModule);
     return SettingModule;
 }());
-SettingModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            ng2_translate_1.TranslateModule
-        ],
-        declarations: [
-            setting_component_1.SettingComponent
-        ]
-    })
-], SettingModule);
 exports.SettingModule = SettingModule;
 //# sourceMappingURL=setting.module.js.map

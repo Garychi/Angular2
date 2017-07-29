@@ -23,16 +23,16 @@ var MainContentComponent = (function () {
     MainContentComponent.prototype.ngOnInit = function () {
         // this.boxes=this.dataAccessService.getMockBoxData();
     };
+    MainContentComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'main-content',
+            templateUrl: 'main-content.component.html'
+            // , styleUrls:['main-content.component.css']
+        }),
+        __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
+    ], MainContentComponent);
     return MainContentComponent;
 }());
-MainContentComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'main-content',
-        templateUrl: 'main-content.component.html'
-        // , styleUrls:['main-content.component.css']
-    }),
-    __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
-], MainContentComponent);
 exports.MainContentComponent = MainContentComponent;
 //# sourceMappingURL=main-content.component.js.map

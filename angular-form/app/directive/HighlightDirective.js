@@ -17,13 +17,13 @@ var HighlightDirective = (function () {
     function HighlightDirective(el, renderer) {
         renderer.setElementStyle(el.nativeElement, 'backgroundColor', 'yellow');
     }
+    HighlightDirective = __decorate([
+        core_1.Directive({
+            selector: '[myHighLight]'
+        }),
+        __metadata("design:paramtypes", [core_1.ElementRef, core_1.Renderer])
+    ], HighlightDirective);
     return HighlightDirective;
 }());
-HighlightDirective = __decorate([
-    core_1.Directive({
-        selector: '[myHighLight]'
-    }),
-    __metadata("design:paramtypes", [core_1.ElementRef, core_1.Renderer])
-], HighlightDirective);
 exports.HighlightDirective = HighlightDirective;
 //# sourceMappingURL=HighlightDirective.js.map

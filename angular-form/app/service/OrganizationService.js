@@ -35,11 +35,11 @@ var OrganizationService = (function () {
     };
     OrganizationService.prototype.delete = function (body) {
     };
+    OrganizationService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
+    ], OrganizationService);
     return OrganizationService;
 }());
-OrganizationService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
-], OrganizationService);
 exports.OrganizationService = OrganizationService;
 //# sourceMappingURL=OrganizationService.js.map

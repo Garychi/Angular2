@@ -70,11 +70,11 @@ var ProductService = (function () {
         ];
         return products;
     };
+    ProductService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
+    ], ProductService);
     return ProductService;
 }());
-ProductService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
-], ProductService);
 exports.ProductService = ProductService;
 //# sourceMappingURL=ProductService.js.map

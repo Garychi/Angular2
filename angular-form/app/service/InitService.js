@@ -26,11 +26,11 @@ var InitService = (function () {
         var url = "http://localhost:8085/FarmProject/services/restfulService/product/search";
         return this.dataAccessService.post(url, body, this.options);
     };
+    InitService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
+    ], InitService);
     return InitService;
 }());
-InitService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
-], InitService);
 exports.InitService = InitService;
 //# sourceMappingURL=InitService.js.map

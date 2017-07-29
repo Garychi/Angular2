@@ -29,30 +29,30 @@ var login_module_1 = require("../views/login/login.module");
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                ng2_bootstrap_1.Ng2BootstrapModule,
+                main_content_module_1.MainContentModule,
+                side_content_module_1.SideContentModule,
+                menu_bar_module_1.MenuBarModule,
+                // AlertComponentModule,
+                // ModalComponentModule,
+                http_1.HttpModule,
+                http_1.JsonpModule,
+                app_routing_module_1.AppRoutingModule,
+                ng2_translate_1.TranslateModule.forRoot(),
+                login_module_1.LoginModule
+            ],
+            declarations: [
+                app_component_1.AppComponent
+            ],
+            bootstrap: [app_component_1.AppComponent],
+            providers: [i18nService_1.i18nService, LoginService_1.LoginService]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            ng2_bootstrap_1.Ng2BootstrapModule,
-            main_content_module_1.MainContentModule,
-            side_content_module_1.SideContentModule,
-            menu_bar_module_1.MenuBarModule,
-            // AlertComponentModule,
-            // ModalComponentModule,
-            http_1.HttpModule,
-            http_1.JsonpModule,
-            app_routing_module_1.AppRoutingModule,
-            ng2_translate_1.TranslateModule.forRoot(),
-            login_module_1.LoginModule
-        ],
-        declarations: [
-            app_component_1.AppComponent
-        ],
-        bootstrap: [app_component_1.AppComponent],
-        providers: [i18nService_1.i18nService, LoginService_1.LoginService]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

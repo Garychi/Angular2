@@ -30,14 +30,14 @@ var AlertComponent = (function () {
     AlertComponent.prototype.addAlert = function () {
         this.alerts.push({ msg: 'Another alert!', type: 'warning', closable: true });
     };
+    AlertComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'alert-demo',
+            templateUrl: 'alert.component.html'
+        })
+    ], AlertComponent);
     return AlertComponent;
 }());
-AlertComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'alert-demo',
-        templateUrl: 'alert.component.html'
-    })
-], AlertComponent);
 exports.AlertComponent = AlertComponent;
 //# sourceMappingURL=alert.component.js.map
