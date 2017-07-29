@@ -47,11 +47,11 @@ var AuthenticationService = (function () {
         this.token = null;
         localStorage.removeItem('currentUser');
     };
+    AuthenticationService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], AuthenticationService);
     return AuthenticationService;
 }());
-AuthenticationService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], AuthenticationService);
 exports.AuthenticationService = AuthenticationService;
 //# sourceMappingURL=AuthenticationService.js.map

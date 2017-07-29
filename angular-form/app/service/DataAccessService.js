@@ -66,11 +66,11 @@ var DataAccessService = (function () {
         ];
         return data;
     };
+    DataAccessService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], DataAccessService);
     return DataAccessService;
 }());
-DataAccessService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], DataAccessService);
 exports.DataAccessService = DataAccessService;
 //# sourceMappingURL=DataAccessService.js.map

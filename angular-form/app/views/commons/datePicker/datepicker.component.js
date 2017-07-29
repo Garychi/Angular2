@@ -13,14 +13,14 @@ var core_1 = require("@angular/core");
 var DatepickerComponent = (function () {
     function DatepickerComponent() {
     }
+    DatepickerComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'calendar',
+            templateUrl: 'datepicker.component.html'
+        })
+    ], DatepickerComponent);
     return DatepickerComponent;
 }());
-DatepickerComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'calendar',
-        templateUrl: 'datepicker.component.html'
-    })
-], DatepickerComponent);
 exports.DatepickerComponent = DatepickerComponent;
 //# sourceMappingURL=datepicker.component.js.map

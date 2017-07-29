@@ -5,8 +5,8 @@ import {Injectable} from "@angular/core";
 
 @Injectable()
 export class OpenWindowService{
-    private params :Map<string,Object>;
-    private value :Map<string,Object>;
+    // private params :Map<string,Object>;
+    // private value :Map<string,Object>;
     /**
      *
      */
@@ -15,8 +15,8 @@ export class OpenWindowService{
 
     }
 
-    public getValue() :Map<string,Object>{
-
-        return this.params;
-    }
+    // public getValue() :Map<string,Object>{
+    //
+    //     return this.params;
+    // }
 }

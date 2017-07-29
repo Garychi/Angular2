@@ -64,16 +64,16 @@ var ProductComponent = (function () {
     ProductComponent.prototype.selectProd = function (prod) {
         prod.selected = !prod.selected;
     };
+    ProductComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'product',
+            templateUrl: 'product.component.html',
+            styleUrls: ['product.component.css']
+        }),
+        __metadata("design:paramtypes", [ProductService_1.ProductService])
+    ], ProductComponent);
     return ProductComponent;
 }());
-ProductComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'product',
-        templateUrl: 'product.component.html',
-        styleUrls: ['product.component.css']
-    }),
-    __metadata("design:paramtypes", [ProductService_1.ProductService])
-], ProductComponent);
 exports.ProductComponent = ProductComponent;
 //# sourceMappingURL=product.component.js.map

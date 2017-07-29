@@ -17,28 +17,28 @@ var i18nService_1 = require("../../service/i18nService");
 var DialogModule = (function () {
     function DialogModule() {
     }
+    DialogModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule
+            ],
+            declarations: [
+                dialog_component_1.DialogComponent,
+                dialog_component_2.DialogResultExampleDialog
+            ],
+            exports: [
+                dialog_component_1.DialogComponent,
+                dialog_component_2.DialogResultExampleDialog
+            ],
+            providers: [
+                i18nService_1.i18nService
+            ],
+            entryComponents: [
+                dialog_component_1.DialogComponent
+            ]
+        })
+    ], DialogModule);
     return DialogModule;
 }());
-DialogModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule
-        ],
-        declarations: [
-            dialog_component_1.DialogComponent,
-            dialog_component_2.DialogResultExampleDialog
-        ],
-        exports: [
-            dialog_component_1.DialogComponent,
-            dialog_component_2.DialogResultExampleDialog
-        ],
-        providers: [
-            i18nService_1.i18nService
-        ],
-        entryComponents: [
-            dialog_component_1.DialogComponent
-        ]
-    })
-], DialogModule);
 exports.DialogModule = DialogModule;
 //# sourceMappingURL=dialog.module.js.map

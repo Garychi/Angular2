@@ -17,20 +17,20 @@ var side_content_component_1 = require("./side-content.component");
 var SideContentModule = (function () {
     function SideContentModule() {
     }
+    SideContentModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                // DropDownComponentModule,
+                menu_module_1.MenuModule
+            ],
+            declarations: [
+                side_content_component_1.SideContentComponent
+            ],
+            exports: [side_content_component_1.SideContentComponent]
+        })
+    ], SideContentModule);
     return SideContentModule;
 }());
-SideContentModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            // DropDownComponentModule,
-            menu_module_1.MenuModule
-        ],
-        declarations: [
-            side_content_component_1.SideContentComponent
-        ],
-        exports: [side_content_component_1.SideContentComponent]
-    })
-], SideContentModule);
 exports.SideContentModule = SideContentModule;
 //# sourceMappingURL=side-content.module.js.map

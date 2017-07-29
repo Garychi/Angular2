@@ -31,16 +31,16 @@ var LoginComponent = (function () {
         };
         this.router.navigate(['/fintech'], navigationExtras);
     };
+    LoginComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'login',
+            templateUrl: 'login.component.html',
+            styleUrls: ['login.component.css']
+        }),
+        __metadata("design:paramtypes", [LoginService_1.LoginService, router_1.Router])
+    ], LoginComponent);
     return LoginComponent;
 }());
-LoginComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'login',
-        templateUrl: 'login.component.html',
-        styleUrls: ['login.component.css']
-    }),
-    __metadata("design:paramtypes", [LoginService_1.LoginService, router_1.Router])
-], LoginComponent);
 exports.LoginComponent = LoginComponent;
 //# sourceMappingURL=login.component.js.map

@@ -20,15 +20,15 @@ var CalendarComponent = (function () {
     CalendarComponent.prototype.getDateValue = function () {
         return this.dateValue;
     };
+    CalendarComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'myCalendar',
+            templateUrl: 'calendar.component.html'
+        }),
+        __metadata("design:paramtypes", [])
+    ], CalendarComponent);
     return CalendarComponent;
 }());
-CalendarComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'myCalendar',
-        templateUrl: 'calendar.component.html'
-    }),
-    __metadata("design:paramtypes", [])
-], CalendarComponent);
 exports.CalendarComponent = CalendarComponent;
 //# sourceMappingURL=calendar.component.js.map

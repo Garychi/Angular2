@@ -1,8 +1,8 @@
+"use strict";
 /**
  * Created by Mos on 2016/11/17.
  */
 // import 'rxjs/Rx'; // adds ALL RxJS statics & operators to Observable
-"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // See node_module/rxjs/Rxjs.js
 // Import just the rxjs statics and operators needed for THIS app.

@@ -25,14 +25,14 @@ var ModalComponent = (function () {
     // }
     ModalComponent.prototype.ngOnInit = function () {
     };
+    ModalComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'open-win',
+            templateUrl: 'modal.component.html'
+        })
+    ], ModalComponent);
     return ModalComponent;
 }());
-ModalComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'open-win',
-        templateUrl: 'modal.component.html'
-    })
-], ModalComponent);
 exports.ModalComponent = ModalComponent;
 //# sourceMappingURL=modal.component.js.map

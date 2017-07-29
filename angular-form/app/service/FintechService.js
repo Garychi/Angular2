@@ -26,11 +26,11 @@ var FintechService = (function () {
         var options = new http_1.RequestOptions({ headers: headers });
         return this.dataAccessService.post(url, queryString);
     };
+    FintechService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
+    ], FintechService);
     return FintechService;
 }());
-FintechService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [DataAccessService_1.DataAccessService])
-], FintechService);
 exports.FintechService = FintechService;
 //# sourceMappingURL=FintechService.js.map

@@ -28,11 +28,11 @@ var i18nService = (function () {
             this.translate.use(lang);
         }
     };
+    i18nService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [ng2_translate_1.TranslateService])
+    ], i18nService);
     return i18nService;
 }());
-i18nService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [ng2_translate_1.TranslateService])
-], i18nService);
 exports.i18nService = i18nService;
 //# sourceMappingURL=i18nService.js.map

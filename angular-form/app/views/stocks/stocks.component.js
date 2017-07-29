@@ -13,14 +13,14 @@ var core_1 = require("@angular/core");
 var StocksComponent = (function () {
     function StocksComponent() {
     }
+    StocksComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'stocks',
+            templateUrl: 'stocks.component.html'
+        })
+    ], StocksComponent);
     return StocksComponent;
 }());
-StocksComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'stocks',
-        templateUrl: 'stocks.component.html'
-    })
-], StocksComponent);
 exports.StocksComponent = StocksComponent;
 //# sourceMappingURL=stocks.component.js.map

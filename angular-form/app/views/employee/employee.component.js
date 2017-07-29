@@ -39,15 +39,15 @@ var EmployeeComponent = (function () {
     EmployeeComponent.prototype.handleError = function (error) {
         console.log(error);
     };
+    EmployeeComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'employee',
+            templateUrl: 'employee.component.html'
+        }),
+        __metadata("design:paramtypes", [EmployeeService_1.EmployeeService])
+    ], EmployeeComponent);
     return EmployeeComponent;
 }());
-EmployeeComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'employee',
-        templateUrl: 'employee.component.html'
-    }),
-    __metadata("design:paramtypes", [EmployeeService_1.EmployeeService])
-], EmployeeComponent);
 exports.EmployeeComponent = EmployeeComponent;
 //# sourceMappingURL=employee.component.js.map

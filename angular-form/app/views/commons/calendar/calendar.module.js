@@ -17,22 +17,22 @@ var calendar_component_1 = require("./calendar.component"); //accordion and acco
 var CalendarComponentModule = (function () {
     function CalendarComponentModule() {
     }
+    CalendarComponentModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                forms_1.FormsModule,
+                primeng_1.CalendarModule
+            ],
+            declarations: [
+                calendar_component_1.CalendarComponent
+            ],
+            exports: [
+                calendar_component_1.CalendarComponent
+            ]
+        })
+    ], CalendarComponentModule);
     return CalendarComponentModule;
 }());
-CalendarComponentModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            forms_1.FormsModule,
-            primeng_1.CalendarModule
-        ],
-        declarations: [
-            calendar_component_1.CalendarComponent
-        ],
-        exports: [
-            calendar_component_1.CalendarComponent
-        ]
-    })
-], CalendarComponentModule);
 exports.CalendarComponentModule = CalendarComponentModule;
 //# sourceMappingURL=calendar.module.js.map

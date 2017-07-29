@@ -17,14 +17,14 @@ var MenuBarComponent = (function () {
     };
     MenuBarComponent.prototype.getMenuContent = function () {
     };
+    MenuBarComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'menu-bar',
+            templateUrl: 'menu-bar.component.html'
+        })
+    ], MenuBarComponent);
     return MenuBarComponent;
 }());
-MenuBarComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'menu-bar',
-        templateUrl: 'menu-bar.component.html'
-    })
-], MenuBarComponent);
 exports.MenuBarComponent = MenuBarComponent;
 //# sourceMappingURL=menu-bar.component.js.map

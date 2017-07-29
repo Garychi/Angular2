@@ -13,18 +13,17 @@ var core_1 = require("@angular/core");
 var OpenWindowService = (function () {
     function OpenWindowService() {
     }
+    // private params :Map<string,Object>;
+    // private value :Map<string,Object>;
     /**
      *
      */
     OpenWindowService.prototype.setParams = function () {
     };
-    OpenWindowService.prototype.getValue = function () {
-        return this.params;
-    };
+    OpenWindowService = __decorate([
+        core_1.Injectable()
+    ], OpenWindowService);
     return OpenWindowService;
 }());
-OpenWindowService = __decorate([
-    core_1.Injectable()
-], OpenWindowService);
 exports.OpenWindowService = OpenWindowService;
 //# sourceMappingURL=OpenWindowService.js.map

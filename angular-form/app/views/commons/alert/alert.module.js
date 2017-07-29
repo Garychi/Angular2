@@ -16,19 +16,19 @@ var alert_component_1 = require("./alert.component");
 var AlertComponentModule = (function () {
     function AlertComponentModule() {
     }
+    AlertComponentModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                ng2_bootstrap_1.AlertModule
+            ],
+            declarations: [
+                alert_component_1.AlertComponent
+            ],
+            exports: [alert_component_1.AlertComponent]
+        })
+    ], AlertComponentModule);
     return AlertComponentModule;
 }());
-AlertComponentModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            ng2_bootstrap_1.AlertModule
-        ],
-        declarations: [
-            alert_component_1.AlertComponent
-        ],
-        exports: [alert_component_1.AlertComponent]
-    })
-], AlertComponentModule);
 exports.AlertComponentModule = AlertComponentModule;
 //# sourceMappingURL=alert.module.js.map

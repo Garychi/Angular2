@@ -15,18 +15,18 @@ var menu_bar_component_1 = require("./menu-bar.component");
 var MenuBarModule = (function () {
     function MenuBarModule() {
     }
+    MenuBarModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule
+            ],
+            declarations: [
+                menu_bar_component_1.MenuBarComponent
+            ],
+            exports: [menu_bar_component_1.MenuBarComponent]
+        })
+    ], MenuBarModule);
     return MenuBarModule;
 }());
-MenuBarModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule
-        ],
-        declarations: [
-            menu_bar_component_1.MenuBarComponent
-        ],
-        exports: [menu_bar_component_1.MenuBarComponent]
-    })
-], MenuBarModule);
 exports.MenuBarModule = MenuBarModule;
 //# sourceMappingURL=menu-bar.module.js.map
